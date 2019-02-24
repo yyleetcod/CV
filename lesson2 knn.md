@@ -4,14 +4,14 @@
 **不使用knn的原因：**
 
 - 测试时间代价大
-- 不直观。不同的图片千差万别，但是可能和测试图片都有着相同的欧几里得距离
+- 不直观。不同的图片千差万别，但是可能和测试图片都有着相同的欧几里得距离。在原始像素值上使用L1或L2距离是不够的，因为距离与图像的背景和颜色分布的相关性比与其语义内容的相关性更强
 
 可以认为线性分类器在做一个模板匹配。只关心影响最后输出的像素点；或者认为是高维空间上的一个分类边界
 
 线性分类器没有能力同时获取多个模型，所以如果模型中红色较多，模型就会偏红色
 分类边界非线性时，线性分类器无法工作
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTUxMzk2MzYsOTA1NjIyMzQsNTA5OT
-c2NzksMTAyODEyODEyNiwyOTYxNDU3MTcsLTEwOTIzMzY4NTUs
-ODM5Mzk2Njg2XX0=
+eyJoaXN0b3J5IjpbLTg4MjQyMzk4OSwtMjA5NTEzOTYzNiw5MD
+U2MjIzNCw1MDk5NzY3OSwxMDI4MTI4MTI2LDI5NjE0NTcxNywt
+MTA5MjMzNjg1NSw4MzkzOTY2ODZdfQ==
 -->
