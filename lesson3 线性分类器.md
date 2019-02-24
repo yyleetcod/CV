@@ -5,6 +5,7 @@ To develop a more powerful approach to image classification that will have two m
 线性分类器没有能力同时获取多个模型，所以如果模型中红色较多，模型就会偏红色
 分类边界非线性时，线性分类器无法工作
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2Nzg5NDE0MV19
+eyJoaXN0b3J5IjpbLTkzNjA4NTAwNywtNDY3ODk0MTQxXX0=
 -->
