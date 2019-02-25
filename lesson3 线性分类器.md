@@ -9,8 +9,8 @@ To develop a more powerful approach to image classification that will have two m
 
 **In practice, SVM and Softmax are usually comparable.**  The performance difference between the SVM and Softmax are usually very small, and different people will have different opinions on which classifier works better. Compared to the Softmax classifier, the SVM is a more  _local_  objective, which could be thought of either as a bug or a feature. Consider an example that achieves the scores [10, -2, 3] and where the first class is correct. An SVM (e.g. with desired margin of  Δ=1) will see that the correct class already has a score higher than the margin compared to the other classes and it will compute loss of zero. The SVM does not care about the details of the individual scores: if they were instead [10, -100, -100] or [10, 9, 9] the SVM would be indifferent since the margin of 1 is satisfied and hence the loss is zero. However, these scenarios are not equivalent to a Softmax classifier, which would accumulate a much higher loss for the scores [10, 9, 9] than for [10, -100, -100]. In other words, the Softmax classifier is never fully happy with the scores it produces: the correct class could always have a higher probability and the incorrect classes always a lower probability and the loss would always get better. However, the SVM is happy once the margins are satisfied and it does not micromanage the exact scores beyond this constraint. This can intuitively be thought of as a feature: For example, a car classifier which is likely spending most of its “effort” on the difficult problem of separating cars from trucks should not be influenced by the frog examples, which it already assigns very low scores to, and which likely cluster around a completely different side of the data cloud.
 
-对于一张图片：1.计算不同特征（例如颜色分布直方图） 2.统计总结
+对于一张图片：1.计算不同特征（例如颜色分布直方图；不同物体之间的边缘方向，统计边缘数量分布） 2.统计总结
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODU4NTE5OTA4LDcyOTk5ODUwNiwxMzkwOT
-YwMjUzLC05MzYwODUwMDcsLTQ2Nzg5NDE0MV19
+eyJoaXN0b3J5IjpbLTU2MTA3MDgyMSw3Mjk5OTg1MDYsMTM5MD
+k2MDI1MywtOTM2MDg1MDA3LC00Njc4OTQxNDFdfQ==
 -->
