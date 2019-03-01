@@ -57,8 +57,10 @@ BN层会延长模型的训练时间，最大30%
 学习速率和正则化参数要在对数空间中取样，因为这两个参数在反向传播的时候是相乘的。如果像1、2、3、...、n这样取样，里面很多都是处于效果不好的区域
 1. 在一定区域内随机取超参数
 2. 在一定区域内网格化取超参数
+
+随机取效果更好。因为大部分情况，一个超参数hui'bi
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5MDM3OTk1LDIxNTM1MjcyNiwtMTcyMT
-Y0MTk3MSwtMTgxMjc1NDA2LDE4NzIzNDExMjQsMTA2MDUyMDk3
-MSwyMDAzODkzMjc0XX0=
+eyJoaXN0b3J5IjpbLTIxMDExOTQ2OSwyMTUzNTI3MjYsLTE3Mj
+E2NDE5NzEsLTE4MTI3NTQwNiwxODcyMzQxMTI0LDEwNjA1MjA5
+NzEsMjAwMzg5MzI3NF19
 -->
