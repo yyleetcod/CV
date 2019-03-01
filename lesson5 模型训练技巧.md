@@ -58,9 +58,10 @@ BN层会延长模型的训练时间，最大30%
 1. 在一定区域内随机取超参数
 2. 在一定区域内网格化取超参数
 
-随机取效果更好。因为大部分情况，一个超参数hui'bi
+随机取效果更好。因为大部分情况，一个超参数会比另一个超参数的重要性大很多。而且可能只是在一个很小的区域内取值，模型会有比较好的效果。这样随机取样，取到的值就更多：
+![enter image description here](https://lh3.googleusercontent.com/7uWQEn4R44GHoYClTG1emTsfDDig7-nvebcwROzCrrPoAs7JMEY-jRHgnK3ZIJwEMVVGC7unyOOU)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDExOTQ2OSwyMTUzNTI3MjYsLTE3Mj
+eyJoaXN0b3J5IjpbMjA2NzY3Nzc4NCwyMTUzNTI3MjYsLTE3Mj
 E2NDE5NzEsLTE4MTI3NTQwNiwxODcyMzQxMTI0LDEwNjA1MjA5
 NzEsMjAwMzg5MzI3NF19
 -->
