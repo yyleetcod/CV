@@ -45,8 +45,9 @@
 激活函数为tanh时，一种有效的初始化方式：权重标准差~1/sqrt(num_in)，这样有助于每层的输出标准差为1。
 但是上述方式在ReLu中不奏效，因为ReLu让方差减半了（把<0的一办置为0）。因此权重标准差~1/sqrt(num_in/2)。没有这个2，输出分布就会以指数级别坍缩
 
-2. Batch Normalization：对每个维度单独做归一化，来获得单位高斯分布的变量。该层加在全连接层（或者卷积层）和非线性激活层（如tanh）之间。但是问题时tanh的输入一定要是单位高斯分布的吗？可以这么解决（加入偏移作为参数，如果不需要batch normalization，参数最后会学习让这个层作用消失）：
+2. Batch Normalization：对每个维度的特征单独做归一化，来获得单位高斯分布的变量。该层加在全连接层（或者卷积层）和非线性激活层（如tanh）之间。但是问题时tanh的输入一定要是单位高斯分布的吗？可以这么解决（加入偏移作为参数，如果不需要batch normalization，参数最后会学习让这个层作用消失）：
 ![enter image description here](https://lh3.googleusercontent.com/rmswx2YOnu-Gfcgl_GY0VdN_v0tWX16Yaj7h3VIhZn9R-eOGeAM9gOhN2RNd6ggnc1XaQik94_dR)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2MDUyMDk3MSwyMDAzODkzMjc0XX0=
+eyJoaXN0b3J5IjpbLTE4NjIxMzA2MDMsMTA2MDUyMDk3MSwyMD
+AzODkzMjc0XX0=
 -->
