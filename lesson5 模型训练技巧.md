@@ -1,4 +1,6 @@
 # 激活函数
+
+如果没有激活函数，网络的分类能力基本上类似于线性分类器
 **sigmoid问题：**
 1. 饱和区域梯度为0
 2. sigmoid输出恒为正。恒为正的数据作为输入数据，将会导致梯度要么都为正，要么都为负。因此w只能通向变化。如果要达到w的最优值，那么所走的路径是很曲折的（比如w1，w2变化方向不一致，要达到的话不能走斜线，只能分两次，竖直和水平各走一次），因此收敛速度很慢。所以我们更希望得到关于原点中心的输入数据和关于原点中心对此的输出
@@ -67,8 +69,8 @@ BN层会延长模型的训练时间，最大30%
 
 ![enter image description here](https://lh3.googleusercontent.com/ruqXTdCdpZb76MmSh6yssI3AXOGkWrrlFVPLaf7HzIWRUXCaVRg5R-O1EIiPnFMChK3TTaQiOTm-)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTUzODUyNzQsLTE0NzU2MDA4NDYsMj
-A2NzY3Nzc4NCwyMTUzNTI3MjYsLTE3MjE2NDE5NzEsLTE4MTI3
-NTQwNiwxODcyMzQxMTI0LDEwNjA1MjA5NzEsMjAwMzg5MzI3NF
-19
+eyJoaXN0b3J5IjpbMTI3NTE5ODk5OCwtMTY5NTM4NTI3NCwtMT
+Q3NTYwMDg0NiwyMDY3Njc3Nzg0LDIxNTM1MjcyNiwtMTcyMTY0
+MTk3MSwtMTgxMjc1NDA2LDE4NzIzNDExMjQsMTA2MDUyMDk3MS
+wyMDAzODkzMjc0XX0=
 -->
