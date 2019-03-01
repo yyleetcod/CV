@@ -53,9 +53,9 @@ BN层吧不同样本联系在了一起，得到了当前batch的样本表示空�
 ![enter image description here](https://lh3.googleusercontent.com/R8Kb-BIB66RE9mWGFzX10b3aIBJhmG2BPt1HDpJR1AhQlfg21weq946LkMkWEQM7TyIh_vtODHpW)
 BN层会延长模型的训练时间，最大30%
 
-学习速率和正则化参数要在
+学习速率和正则化参数要在对数空间中取样，因为这两个参数在反向传播的时候是相乘的。如果像1、2、3、...\
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM1NTE4MDQ2LC0xNzIxNjQxOTcxLC0xOD
-EyNzU0MDYsMTg3MjM0MTEyNCwxMDYwNTIwOTcxLDIwMDM4OTMy
-NzRdfQ==
+eyJoaXN0b3J5IjpbLTIxMzc5MDY5MjEsLTE3MjE2NDE5NzEsLT
+E4MTI3NTQwNiwxODcyMzQxMTI0LDEwNjA1MjA5NzEsMjAwMzg5
+MzI3NF19
 -->
