@@ -49,7 +49,8 @@
 ![enter image description here](https://lh3.googleusercontent.com/rmswx2YOnu-Gfcgl_GY0VdN_v0tWX16Yaj7h3VIhZn9R-eOGeAM9gOhN2RNd6ggnc1XaQik94_dR)
 batch normalization好处：
 ![enter image description here](https://lh3.googleusercontent.com/nJ0f4digtFYPbUnKOPP3LVt5wBVYidRofzIty8rDNs4jpthgmxfpO56OBLA4Oxac8MUrVDnxkk4m)
+BN层吧不同样本联系在了一起，得到了当前batch的样本表示空间，有不错的正则化效果
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3MjM0MTEyNCwxMDYwNTIwOTcxLDIwMD
-M4OTMyNzRdfQ==
+eyJoaXN0b3J5IjpbLTE4MTI3NTQwNiwxODcyMzQxMTI0LDEwNj
+A1MjA5NzEsMjAwMzg5MzI3NF19
 -->
