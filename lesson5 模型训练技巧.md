@@ -47,7 +47,9 @@
 
 2. Batch Normalization：对每个维度的特征单独做归一化，来获得单位高斯分布的变量。该层加在全连接层（或者卷积层）和非线性激活层（如tanh）之间。但是问题时tanh的输入一定要是单位高斯分布的吗？可以这么解决（加入偏移作为参数，如果不需要batch normalization，参数最后会学习让这个层作用消失）：
 ![enter image description here](https://lh3.googleusercontent.com/rmswx2YOnu-Gfcgl_GY0VdN_v0tWX16Yaj7h3VIhZn9R-eOGeAM9gOhN2RNd6ggnc1XaQik94_dR)
+batch normalization好处：
+![enter image description here](https://lh3.googleusercontent.com/nJ0f4digtFYPbUnKOPP3LVt5wBVYidRofzIty8rDNs4jpthgmxfpO56OBLA4Oxac8MUrVDnxkk4m)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjIxMzA2MDMsMTA2MDUyMDk3MSwyMD
-AzODkzMjc0XX0=
+eyJoaXN0b3J5IjpbMTg3MjM0MTEyNCwxMDYwNTIwOTcxLDIwMD
+M4OTMyNzRdfQ==
 -->
