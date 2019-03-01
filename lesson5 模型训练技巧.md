@@ -62,8 +62,12 @@ BN层会延长模型的训练时间，最大30%
 ![enter image description here](https://lh3.googleusercontent.com/7uWQEn4R44GHoYClTG1emTsfDDig7-nvebcwROzCrrPoAs7JMEY-jRHgnK3ZIJwEMVVGC7unyOOU)
 ![enter image description here](https://lh3.googleusercontent.com/ffpCMzc_N0WFBw-m9bGgWXwIOIedHUKH0saZngfqMAcbbeXiNWsk1YJcWv52rGL336ROGuwnFjxg)
 一个比较好的更新/权重~1e-3
+
+# Summary
+
+![enter image description here](https://lh3.googleusercontent.com/ruqXTdCdpZb76MmSh6yssI3AXOGkWrrlFVPLaf7HzIWRUXCaVRg5R-O1EIiPnFMChK3TTaQiOTm-)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDEwOTg2MTksLTE0NzU2MDA4NDYsMj
+eyJoaXN0b3J5IjpbLTE2OTUzODUyNzQsLTE0NzU2MDA4NDYsMj
 A2NzY3Nzc4NCwyMTUzNTI3MjYsLTE3MjE2NDE5NzEsLTE4MTI3
 NTQwNiwxODcyMzQxMTI0LDEwNjA1MjA5NzEsMjAwMzg5MzI3NF
 19
