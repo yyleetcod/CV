@@ -61,8 +61,10 @@ BN层会延长模型的训练时间，最大30%
 随机取效果更好。因为大部分情况，一个超参数会比另一个超参数的重要性大很多。而且可能只是在一个很小的区域内取值，模型会有比较好的效果。这样随机取样，取到的值就更多：
 ![enter image description here](https://lh3.googleusercontent.com/7uWQEn4R44GHoYClTG1emTsfDDig7-nvebcwROzCrrPoAs7JMEY-jRHgnK3ZIJwEMVVGC7unyOOU)
 ![enter image description here](https://lh3.googleusercontent.com/ffpCMzc_N0WFBw-m9bGgWXwIOIedHUKH0saZngfqMAcbbeXiNWsk1YJcWv52rGL336ROGuwnFjxg)
+一个比较好的更新/权重~1e-3
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzU2MDA4NDYsMjA2NzY3Nzc4NCwyMT
-UzNTI3MjYsLTE3MjE2NDE5NzEsLTE4MTI3NTQwNiwxODcyMzQx
-MTI0LDEwNjA1MjA5NzEsMjAwMzg5MzI3NF19
+eyJoaXN0b3J5IjpbLTEwMDEwOTg2MTksLTE0NzU2MDA4NDYsMj
+A2NzY3Nzc4NCwyMTUzNTI3MjYsLTE3MjE2NDE5NzEsLTE4MTI3
+NTQwNiwxODcyMzQxMTI0LDEwNjA1MjA5NzEsMjAwMzg5MzI3NF
+19
 -->
