@@ -29,8 +29,10 @@ RMSProp Update只考虑最近几个的梯度平方和
 rmsprop和momentum的结合：
 ![enter image description here](https://lh3.googleusercontent.com/OgbL7hjb4tqLjRsa7Ip68WY7aNO27ng9VqW67j1eKyDaFFOg0QdAlKCQ8phwUmwxxT9S34qFRD-K)
 $\beta_1=0.9$,$\beta_2=0.995$是一组鲁棒性不错的参数
+![enter image description here](https://lh3.googleusercontent.com/SXnOh0LlS3IhSikyCpN494IobOgKhryGka9H__-QiQ5XnVcbZ18Wlao1pvyVEUzOJjvYA71W8rfG)
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjUzOTMyMjEsNjU4MDIxMzY0LDY2MT
-EwNTE1NCwtMjA5OTEwOTA4MCwtNzM5OTk2ODAzLDY1NTExOTQx
-MywtMTQzMTkxMzQ4NywxNjk2OTcxNTM4XX0=
+eyJoaXN0b3J5IjpbNDM2Njg5OTQ3LC0xMTI1MzkzMjIxLDY1OD
+AyMTM2NCw2NjExMDUxNTQsLTIwOTkxMDkwODAsLTczOTk5Njgw
+Myw2NTUxMTk0MTMsLTE0MzE5MTM0ODcsMTY5Njk3MTUzOF19
 -->
