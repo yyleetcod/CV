@@ -38,7 +38,7 @@ $\beta_1=0.9$,$\beta_2=0.995$是一组鲁棒性不错的参数
 
 # 二阶优化方法
 比如牛顿法。
-
+![enter image description here](https://lh3.googleusercontent.com/TBM6EwMfNtPmG3eYtuDRgdCN-Lhn-vI1rEv-ukYtDP1e3HqCT2CdUIUcj1hGCdcXfhm31R5kIkJ5)
 好处是收敛更快，超参数更少
 坏处是二阶导矩阵太大了，计算不出来
 ![enter image description here](https://lh3.googleusercontent.com/lI33lSsY7vnwUKsThyXnOv6_82sKLeOzHMMkQrzNdRQbTi6mYfQaFhbXCOnQRVF_XYjwKfsFTJZa)
@@ -46,7 +46,7 @@ $\beta_1=0.9$,$\beta_2=0.995$是一组鲁棒性不错的参数
 ![enter image description here](https://lh3.googleusercontent.com/jaWnZjaOfGf4ZKB1AiL656uwFOnAC7OPdfK7MQ4NsV0caIEnhzW7jKJNddVxVInTriqX0GQI0YZz)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzM3OTkzODUsLTExNzAyOTIzNjUsMj
+eyJoaXN0b3J5IjpbLTE3MzM1MDU3OTYsLTExNzAyOTIzNjUsMj
 I3NDUwNDM5LC0xMTI1MzkzMjIxLDY1ODAyMTM2NCw2NjExMDUx
 NTQsLTIwOTkxMDkwODAsLTczOTk5NjgwMyw2NTUxMTk0MTMsLT
 E0MzE5MTM0ODcsMTY5Njk3MTUzOF19
