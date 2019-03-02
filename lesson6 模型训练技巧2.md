@@ -53,7 +53,7 @@ $\beta_1=0.9$,$\beta_2=0.995$是一组鲁棒性不错的参数
 ![enter image description here](https://lh3.googleusercontent.com/epgG28uUD40Hm1VAASJbxW1B2fqp5cr8LeiJh5JppIvFP7kacME-R32HF2wsoGqHU_WXsjwWsTno)
 ![enter image description here](https://lh3.googleusercontent.com/ryQbkcyHJ42fBRt0l5KyPzvchslWmIG3L51DaqGshUcd4sQ6SwXPfbmnhNMAuz5p0-QLuL80fNBe)
 前向传播和反向传播要同时进行dropout（或都不进行）
-一般都保留50%
+一般都保留50%，想要更强的正则化，就多失活一些神经元
 有效防止过拟合：每次只是用一半的节点，网络中设计的变量数减少，模型表达能力下降，减少过拟合的几率。
 可以这么理解dropout：
 1. 由于过程中每个特征都可能被随机的失活，所以dropout会让模型更倾向于去依赖更多的特征，来提高自己的准确率
@@ -62,13 +62,17 @@ $\beta_1=0.9$,$\beta_2=0.995$是一组鲁棒性不错的参数
 测试时：
 ![enter image description here](https://lh3.googleusercontent.com/is8Qe3ysCiRQtX1hlH6qlj4iCIFws-v7LS_NRk_hnRQtoxMJZ1ezk-naKSvbpTSqwiVEopZyFXOF)
 上述这种方法太过耗时
+![enter image description here](https://lh3.googleusercontent.com/dwZZ7xLqsCa_-Rz0ghVrVTq3RA7d0aucsr_PDBr4YR1FNXfHcfIV8jRBgsOiuGvRWSFOqiVfBipj)
+![enter image description here](https://lh3.googleusercontent.com/VIKt5kopcHSZAzurvMs--j8mB0nq_KZBUNjOFTleTL_MKDo-ZfYy9TFc9z6bj3Mau5EX6F4XEVKf)
+![enter image description here](https://lh3.googleusercontent.com/pOva4KD4Euw3X9bd-B0BsUb8pkBQQuVakYzUqc5NvASGJsb3UuP3y2LIw02vdsD52JwBrRIND_wo)
+需要对j
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyMjE3NDc4NSw2OTU1MzA1ODIsLTQ2OT
-A0MDA4MCw0NjAxNDY4MywtMjA0MjA2MTg0LDM0NzQzMjkwMywt
-MTczMzUwNTc5NiwtMTE3MDI5MjM2NSwyMjc0NTA0MzksLTExMj
-UzOTMyMjEsNjU4MDIxMzY0LDY2MTEwNTE1NCwtMjA5OTEwOTA4
-MCwtNzM5OTk2ODAzLDY1NTExOTQxMywtMTQzMTkxMzQ4NywxNj
-k2OTcxNTM4XX0=
+eyJoaXN0b3J5IjpbLTE5Njg3NDk4OTksNjk1NTMwNTgyLC00Nj
+kwNDAwODAsNDYwMTQ2ODMsLTIwNDIwNjE4NCwzNDc0MzI5MDMs
+LTE3MzM1MDU3OTYsLTExNzAyOTIzNjUsMjI3NDUwNDM5LC0xMT
+I1MzkzMjIxLDY1ODAyMTM2NCw2NjExMDUxNTQsLTIwOTkxMDkw
+ODAsLTczOTk5NjgwMyw2NTUxMTk0MTMsLTE0MzE5MTM0ODcsMT
+Y5Njk3MTUzOF19
 -->
