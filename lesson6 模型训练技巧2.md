@@ -59,13 +59,16 @@ $\beta_1=0.9$,$\beta_2=0.995$是一组鲁棒性不错的参数
 1. 由于过程中每个特征都可能被随机的失活，所以dropout会让模型更倾向于去依赖更多的特征，来提高自己的准确率
 2. 是很多小模型集成的大模型。失活的神经元在反向传播的过程中梯度为0，它之前与它相连的权重都不会被更新。这就相当于在一次中随机选取了一个子模型的权重拉进行更新。每个随意失活后的模型都是一个子模型，都只会被一个数据训练（失活是随机的，刚好这个数据遇到了这个失活的模式）。多次循环之后我们会用相同的数据来训练有着共同参数的不同模型
 ![enter image description here](https://lh3.googleusercontent.com/vdAQz4tet3npSRW0IW4f4ebEiKZPd5-0xVUm4Sjauxji-i1JsuYqBtb6U-ZPTVP9kOi0-BYp-9iq)
-想要更强的正则化，就多失活一些神经元
+测试时：
+![enter image description here](https://lh3.googleusercontent.com/is8Qe3ysCiRQtX1hlH6qlj4iCIFws-v7LS_NRk_hnRQtoxMJZ1ezk-naKSvbpTSqwiVEopZyFXOF)
+上述这种方法太过耗时
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk1NTMwNTgyLC00NjkwNDAwODAsNDYwMT
-Q2ODMsLTIwNDIwNjE4NCwzNDc0MzI5MDMsLTE3MzM1MDU3OTYs
-LTExNzAyOTIzNjUsMjI3NDUwNDM5LC0xMTI1MzkzMjIxLDY1OD
-AyMTM2NCw2NjExMDUxNTQsLTIwOTkxMDkwODAsLTczOTk5Njgw
-Myw2NTUxMTk0MTMsLTE0MzE5MTM0ODcsMTY5Njk3MTUzOF19
+eyJoaXN0b3J5IjpbMTUyMjE3NDc4NSw2OTU1MzA1ODIsLTQ2OT
+A0MDA4MCw0NjAxNDY4MywtMjA0MjA2MTg0LDM0NzQzMjkwMywt
+MTczMzUwNTc5NiwtMTE3MDI5MjM2NSwyMjc0NTA0MzksLTExMj
+UzOTMyMjEsNjU4MDIxMzY0LDY2MTEwNTE1NCwtMjA5OTEwOTA4
+MCwtNzM5OTk2ODAzLDY1NTExOTQxMywtMTQzMTkxMzQ4NywxNj
+k2OTcxNTM4XX0=
 -->
