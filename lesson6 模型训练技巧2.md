@@ -45,9 +45,11 @@ $\beta_1=0.9$,$\beta_2=0.995$是一组鲁棒性不错的参数
 ![enter image description here](https://lh3.googleusercontent.com/lrpy-f84tDhruseIoIQE5iyXWdw9uQmc6e4zDrXR6d9xS4ZlkHngCCzohhwEzCWUyjBdPau0CQBw)
 ![enter image description here](https://lh3.googleusercontent.com/jaWnZjaOfGf4ZKB1AiL656uwFOnAC7OPdfK7MQ4NsV0caIEnhzW7jKJNddVxVInTriqX0GQI0YZz)
 
+# 集成模型
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzM1MDU3OTYsLTExNzAyOTIzNjUsMj
-I3NDUwNDM5LC0xMTI1MzkzMjIxLDY1ODAyMTM2NCw2NjExMDUx
-NTQsLTIwOTkxMDkwODAsLTczOTk5NjgwMyw2NTUxMTk0MTMsLT
-E0MzE5MTM0ODcsMTY5Njk3MTUzOF19
+eyJoaXN0b3J5IjpbMzQ3NDMyOTAzLC0xNzMzNTA1Nzk2LC0xMT
+cwMjkyMzY1LDIyNzQ1MDQzOSwtMTEyNTM5MzIyMSw2NTgwMjEz
+NjQsNjYxMTA1MTU0LC0yMDk5MTA5MDgwLC03Mzk5OTY4MDMsNj
+U1MTE5NDEzLC0xNDMxOTEzNDg3LDE2OTY5NzE1MzhdfQ==
 -->
