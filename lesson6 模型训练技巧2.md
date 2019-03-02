@@ -54,8 +54,9 @@ $\beta_1=0.9$,$\beta_2=0.995$是一组鲁棒性不错的参数
 ![enter image description here](https://lh3.googleusercontent.com/ryQbkcyHJ42fBRt0l5KyPzvchslWmIG3L51DaqGshUcd4sQ6SwXPfbmnhNMAuz5p0-QLuL80fNBe)
 前向传播和反向传播要同时进行dropout（或都不进行）
 有效防止过拟合：每次只是用一半的节点，网络中设计的变量数减少，模型表达能力下降，减少过拟合的几率
+由于过程中每个特征都可能被随机的失活，所以dropout会让模型更倾向于去依赖更多的特征，来提高自己的准确率
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4ODQxNTEyOSwtMjA0MjA2MTg0LDM0Nz
+eyJoaXN0b3J5IjpbMTkzMDM1NjExMiwtMjA0MjA2MTg0LDM0Nz
 QzMjkwMywtMTczMzUwNTc5NiwtMTE3MDI5MjM2NSwyMjc0NTA0
 MzksLTExMjUzOTMyMjEsNjU4MDIxMzY0LDY2MTEwNTE1NCwtMj
 A5OTEwOTA4MCwtNzM5OTk2ODAzLDY1NTExOTQxMywtMTQzMTkx
