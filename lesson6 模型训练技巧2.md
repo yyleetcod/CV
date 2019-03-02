@@ -53,17 +53,18 @@ $\beta_1=0.9$,$\beta_2=0.995$是一组鲁棒性不错的参数
 ![enter image description here](https://lh3.googleusercontent.com/epgG28uUD40Hm1VAASJbxW1B2fqp5cr8LeiJh5JppIvFP7kacME-R32HF2wsoGqHU_WXsjwWsTno)
 ![enter image description here](https://lh3.googleusercontent.com/ryQbkcyHJ42fBRt0l5KyPzvchslWmIG3L51DaqGshUcd4sQ6SwXPfbmnhNMAuz5p0-QLuL80fNBe)
 前向传播和反向传播要同时进行dropout（或都不进行）
+一般都保留50%
 有效防止过拟合：每次只是用一半的节点，网络中设计的变量数减少，模型表达能力下降，减少过拟合的几率。
 可以这么理解dropout：
 1. 由于过程中每个特征都可能被随机的失活，所以dropout会让模型更倾向于去依赖更多的特征，来提高自己的准确率
-2. 是很多小模型集成的大模型。失活的神经元在反向传播的过程中梯度为0，它之前与它相连的权重都不会被更新。这就相当于在一次中随机选取了一个子模型的权重拉进行更新。每个随意失活后的模型都是一个子模型，都只会被一个数据训练（失活是随机的，刚好这个数据遇到了这个失活的模式）。多次循环之后我们会用相同的数据来训练有着共同参数的
+2. 是很多小模型集成的大模型。失活的神经元在反向传播的过程中梯度为0，它之前与它相连的权重都不会被更新。这就相当于在一次中随机选取了一个子模型的权重拉进行更新。每个随意失活后的模型都是一个子模型，都只会被一个数据训练（失活是随机的，刚好这个数据遇到了这个失活的模式）。多次循环之后我们会用相同的数据来训练有着共同参数的不同模型
 ![enter image description here](https://lh3.googleusercontent.com/vdAQz4tet3npSRW0IW4f4ebEiKZPd5-0xVUm4Sjauxji-i1JsuYqBtb6U-ZPTVP9kOi0-BYp-9iq)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTgwNTY0ODgsNDYwMTQ2ODMsLTIwND
-IwNjE4NCwzNDc0MzI5MDMsLTE3MzM1MDU3OTYsLTExNzAyOTIz
-NjUsMjI3NDUwNDM5LC0xMTI1MzkzMjIxLDY1ODAyMTM2NCw2Nj
-ExMDUxNTQsLTIwOTkxMDkwODAsLTczOTk5NjgwMyw2NTUxMTk0
-MTMsLTE0MzE5MTM0ODcsMTY5Njk3MTUzOF19
+eyJoaXN0b3J5IjpbLTQ2OTA0MDA4MCw0NjAxNDY4MywtMjA0Mj
+A2MTg0LDM0NzQzMjkwMywtMTczMzUwNTc5NiwtMTE3MDI5MjM2
+NSwyMjc0NTA0MzksLTExMjUzOTMyMjEsNjU4MDIxMzY0LDY2MT
+EwNTE1NCwtMjA5OTEwOTA4MCwtNzM5OTk2ODAzLDY1NTExOTQx
+MywtMTQzMTkxMzQ4NywxNjk2OTcxNTM4XX0=
 -->
