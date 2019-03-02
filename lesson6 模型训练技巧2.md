@@ -13,7 +13,12 @@ $w+=v$
 ![enter image description here](https://lh3.googleusercontent.com/6fvYdN_jwtRZ4YD0A0-oBBR2hifcqJMMwcbaIcZ-4NJ3Xv3UuU6IJaPhNk6jS0xQXmWgBH5F9LEm)
 越过最优点的幅度不如Momentum Update那么大，每次都往前预测多考虑一点，多次累加起来的效果会好很多
 在很大的神经网络中，最大和最小的局部最小值之间其实相差不大。局部最小值很差这种问题一般只出现在小的神经网络中
+
+# AdaGrad Update
+![enter image description here](https://lh3.googleusercontent.com/IdpoPmelNjr3ZwXu_iUhN1h_YGM-hxeLn3lZrw8WwtlvUuzJhpurRGjvW0TTQv0nNTeQNMd8hAxg)
+时间一长就会
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTkxMDkwODAsLTczOTk5NjgwMyw2NT
-UxMTk0MTMsLTE0MzE5MTM0ODcsMTY5Njk3MTUzOF19
+eyJoaXN0b3J5IjpbLTkwOTk2MjUzMiwtMjA5OTEwOTA4MCwtNz
+M5OTk2ODAzLDY1NTExOTQxMywtMTQzMTkxMzQ4NywxNjk2OTcx
+NTM4XX0=
 -->
