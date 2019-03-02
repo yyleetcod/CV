@@ -32,10 +32,17 @@ $\beta_1=0.9$,$\beta_2=0.995$是一组鲁棒性不错的参数
 ![enter image description here](https://lh3.googleusercontent.com/SXnOh0LlS3IhSikyCpN494IobOgKhryGka9H__-QiQ5XnVcbZ18Wlao1pvyVEUzOJjvYA71W8rfG)
 引入偏置是因为m、v一开始被设置成0，这样可以让他们更快地warm up
 
-#
+# 学习率
+一开始采用大学习率，后来采用小学习率
+![enter image description here](https://lh3.googleusercontent.com/Z5koJlN6VPTZcOHDwDApT-MGigdDBwJdb1Mdl0qz8qTZQG2hRJoqXUXS-xAUAT462BNddBk2CnW_)
+
+# 二阶优化方法
+比如牛顿法。
+好处是收敛更快，超参数更少
+坏处是二阶导矩阵太大了，计算不出来
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTM4Njk4NzQsMjI3NDUwNDM5LC0xMT
-I1MzkzMjIxLDY1ODAyMTM2NCw2NjExMDUxNTQsLTIwOTkxMDkw
-ODAsLTczOTk5NjgwMyw2NTUxMTk0MTMsLTE0MzE5MTM0ODcsMT
-Y5Njk3MTUzOF19
+eyJoaXN0b3J5IjpbNTgzODM5ODMxLDIyNzQ1MDQzOSwtMTEyNT
+M5MzIyMSw2NTgwMjEzNjQsNjYxMTA1MTU0LC0yMDk5MTA5MDgw
+LC03Mzk5OTY4MDMsNjU1MTE5NDEzLC0xNDMxOTEzNDg3LDE2OT
+Y5NzE1MzhdfQ==
 -->
