@@ -16,9 +16,14 @@ $w+=v$
 
 # AdaGrad Update
 ![enter image description here](https://lh3.googleusercontent.com/IdpoPmelNjr3ZwXu_iUhN1h_YGM-hxeLn3lZrw8WwtlvUuzJhpurRGjvW0TTQv0nNTeQNMd8hAxg)
-时间一长就会
+这样做可以使梯度大的方向由于被放缩而减小。
+但是该方法时间一长就会停止更新，为了解决可以引入衰减率
+
+# RMSProp Update
+![enter image description here](https://lh3.googleusercontent.com/tN4vFsgluaYAnF_oJ7IagJ--sSKO5ksR2XOS20MdOUw1RM4f7UGYs2jKGqZsoAF6w-hUACW6xNfQ)
+具有AdaGrad Update的you'dia
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwOTk2MjUzMiwtMjA5OTEwOTA4MCwtNz
+eyJoaXN0b3J5IjpbMTg0NDg3OTkxOSwtMjA5OTEwOTA4MCwtNz
 M5OTk2ODAzLDY1NTExOTQxMywtMTQzMTkxMzQ4NywxNjk2OTcx
 NTM4XX0=
 -->
