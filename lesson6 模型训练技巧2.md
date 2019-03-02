@@ -27,9 +27,10 @@ RMSProp Update只考虑最近几个的梯度平方和
 
 # Adam
 rmsprop和momentum的结合：
-$$$Beta_2$
+
+$\beta_1=0.9$,$\beta_2=0.995$是一组鲁棒性不错的参数
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDc5OTE1NjMsNjU4MDIxMzY0LDY2MT
+eyJoaXN0b3J5IjpbLTExNTY2NTg1NDgsNjU4MDIxMzY0LDY2MT
 EwNTE1NCwtMjA5OTEwOTA4MCwtNzM5OTk2ODAzLDY1NTExOTQx
 MywtMTQzMTkxMzQ4NywxNjk2OTcxNTM4XX0=
 -->
