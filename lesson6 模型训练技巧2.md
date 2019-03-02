@@ -46,10 +46,15 @@ $\beta_1=0.9$,$\beta_2=0.995$是一组鲁棒性不错的参数
 ![enter image description here](https://lh3.googleusercontent.com/jaWnZjaOfGf4ZKB1AiL656uwFOnAC7OPdfK7MQ4NsV0caIEnhzW7jKJNddVxVInTriqX0GQI0YZz)
 
 # 集成模型
+![enter image description here](https://lh3.googleusercontent.com/kZAuhvyNiNmlHz2gQp8Lf5U3RLMDfSdRRYPfb_X-gDgEmO1EnMz6F7ku8IvLGmzqWN55QuwN9qpO)
+![enter image description here](https://lh3.googleusercontent.com/_1e_G6EWnIzOy8TYSMfvzuYTTTeVJcodtM_x8Fpl3-GXvqyX03z3S_n3eALB93i7sW1BuvwBLjVB)
+
+# Dropout
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ3NDMyOTAzLC0xNzMzNTA1Nzk2LC0xMT
-cwMjkyMzY1LDIyNzQ1MDQzOSwtMTEyNTM5MzIyMSw2NTgwMjEz
-NjQsNjYxMTA1MTU0LC0yMDk5MTA5MDgwLC03Mzk5OTY4MDMsNj
-U1MTE5NDEzLC0xNDMxOTEzNDg3LDE2OTY5NzE1MzhdfQ==
+eyJoaXN0b3J5IjpbLTIwNDIwNjE4NCwzNDc0MzI5MDMsLTE3Mz
+M1MDU3OTYsLTExNzAyOTIzNjUsMjI3NDUwNDM5LC0xMTI1Mzkz
+MjIxLDY1ODAyMTM2NCw2NjExMDUxNTQsLTIwOTkxMDkwODAsLT
+czOTk5NjgwMyw2NTUxMTk0MTMsLTE0MzE5MTM0ODcsMTY5Njk3
+MTUzOF19
 -->
