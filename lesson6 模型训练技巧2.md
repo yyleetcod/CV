@@ -69,11 +69,11 @@ $\beta_1=0.9$,$\beta_2=0.995$是一组鲁棒性不错的参数
 ![enter image description here](https://lh3.googleusercontent.com/3yiWOu0EbHxiIr_4yGf4AhFGEy-SjSefwp71W1qGxfo3xj8BceaxzB55zfxmmsV57bAOGeacMYbe)
 或者也可以在训练的时候修改，测试的时候不变：
 ![enter image description here](https://lh3.googleusercontent.com/jEchkeoejEuB8MCYqh-qplVHyTObOedIHlAiAk19FCLc7F2DzFiIKCfQUUz_JCrD55W3QNVyl3Te)
-这个p的放缩只是一种近似，因为激活函数的非线性 
+这个p的放缩只是一种近似，因为激活函数的非线性。而且是一种期望的概念
 
 # Gradient Checking
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5NjA5OTEzNywtMjA3NjMzODEwMCw2OT
+eyJoaXN0b3J5IjpbLTU2MjQwMDMxMiwtMjA3NjMzODEwMCw2OT
 U1MzA1ODIsLTQ2OTA0MDA4MCw0NjAxNDY4MywtMjA0MjA2MTg0
 LDM0NzQzMjkwMywtMTczMzUwNTc5NiwtMTE3MDI5MjM2NSwyMj
 c0NTA0MzksLTExMjUzOTMyMjEsNjU4MDIxMzY0LDY2MTEwNTE1
