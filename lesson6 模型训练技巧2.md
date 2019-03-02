@@ -67,14 +67,14 @@ $\beta_1=0.9$,$\beta_2=0.995$是一组鲁棒性不错的参数
 ![enter image description here](https://lh3.googleusercontent.com/pOva4KD4Euw3X9bd-B0BsUb8pkBQQuVakYzUqc5NvASGJsb3UuP3y2LIw02vdsD52JwBrRIND_wo)
 需要对激活函数的输出进行一个补偿（乘上p）
 ![enter image description here](https://lh3.googleusercontent.com/3yiWOu0EbHxiIr_4yGf4AhFGEy-SjSefwp71W1qGxfo3xj8BceaxzB55zfxmmsV57bAOGeacMYbe)
-
+huo'zhe
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzEwOTkyNzQsLTIwNzYzMzgxMDAsNj
-k1NTMwNTgyLC00NjkwNDAwODAsNDYwMTQ2ODMsLTIwNDIwNjE4
-NCwzNDc0MzI5MDMsLTE3MzM1MDU3OTYsLTExNzAyOTIzNjUsMj
-I3NDUwNDM5LC0xMTI1MzkzMjIxLDY1ODAyMTM2NCw2NjExMDUx
-NTQsLTIwOTkxMDkwODAsLTczOTk5NjgwMyw2NTUxMTk0MTMsLT
-E0MzE5MTM0ODcsMTY5Njk3MTUzOF19
+eyJoaXN0b3J5IjpbNDEzMDg4OTMyLC0yMDc2MzM4MTAwLDY5NT
+UzMDU4MiwtNDY5MDQwMDgwLDQ2MDE0NjgzLC0yMDQyMDYxODQs
+MzQ3NDMyOTAzLC0xNzMzNTA1Nzk2LC0xMTcwMjkyMzY1LDIyNz
+Q1MDQzOSwtMTEyNTM5MzIyMSw2NTgwMjEzNjQsNjYxMTA1MTU0
+LC0yMDk5MTA5MDgwLC03Mzk5OTY4MDMsNjU1MTE5NDEzLC0xND
+MxOTEzNDg3LDE2OTY5NzE1MzhdfQ==
 -->
