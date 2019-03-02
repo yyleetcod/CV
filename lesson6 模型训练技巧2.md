@@ -69,12 +69,12 @@ $\beta_1=0.9$,$\beta_2=0.995$是一组鲁棒性不错的参数
 ![enter image description here](https://lh3.googleusercontent.com/3yiWOu0EbHxiIr_4yGf4AhFGEy-SjSefwp71W1qGxfo3xj8BceaxzB55zfxmmsV57bAOGeacMYbe)
 或者也可以在训练的时候修改，测试的时候不变：
 ![enter image description here](https://lh3.googleusercontent.com/jEchkeoejEuB8MCYqh-qplVHyTObOedIHlAiAk19FCLc7F2DzFiIKCfQUUz_JCrD55W3QNVyl3Te)
-
+这个p的放缩只是一种近似，因为激活函数的非线性 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2OTA5OTQ1OSwtMjA3NjMzODEwMCw2OT
-U1MzA1ODIsLTQ2OTA0MDA4MCw0NjAxNDY4MywtMjA0MjA2MTg0
-LDM0NzQzMjkwMywtMTczMzUwNTc5NiwtMTE3MDI5MjM2NSwyMj
-c0NTA0MzksLTExMjUzOTMyMjEsNjU4MDIxMzY0LDY2MTEwNTE1
-NCwtMjA5OTEwOTA4MCwtNzM5OTk2ODAzLDY1NTExOTQxMywtMT
-QzMTkxMzQ4NywxNjk2OTcxNTM4XX0=
+eyJoaXN0b3J5IjpbNzcxMjU3NDIwLC0yMDc2MzM4MTAwLDY5NT
+UzMDU4MiwtNDY5MDQwMDgwLDQ2MDE0NjgzLC0yMDQyMDYxODQs
+MzQ3NDMyOTAzLC0xNzMzNTA1Nzk2LC0xMTcwMjkyMzY1LDIyNz
+Q1MDQzOSwtMTEyNTM5MzIyMSw2NTgwMjEzNjQsNjYxMTA1MTU0
+LC0yMDk5MTA5MDgwLC03Mzk5OTY4MDMsNjU1MTE5NDEzLC0xND
+MxOTEzNDg3LDE2OTY5NzE1MzhdfQ==
 -->
