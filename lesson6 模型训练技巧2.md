@@ -50,11 +50,11 @@ $\beta_1=0.9$,$\beta_2=0.995$是一组鲁棒性不错的参数
 ![enter image description here](https://lh3.googleusercontent.com/_1e_G6EWnIzOy8TYSMfvzuYTTTeVJcodtM_x8Fpl3-GXvqyX03z3S_n3eALB93i7sW1BuvwBLjVB)
 
 # Dropout
-
+![enter image description here](https://lh3.googleusercontent.com/epgG28uUD40Hm1VAASJbxW1B2fqp5cr8LeiJh5JppIvFP7kacME-R32HF2wsoGqHU_WXsjwWsTno)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDIwNjE4NCwzNDc0MzI5MDMsLTE3Mz
-M1MDU3OTYsLTExNzAyOTIzNjUsMjI3NDUwNDM5LC0xMTI1Mzkz
-MjIxLDY1ODAyMTM2NCw2NjExMDUxNTQsLTIwOTkxMDkwODAsLT
-czOTk5NjgwMyw2NTUxMTk0MTMsLTE0MzE5MTM0ODcsMTY5Njk3
-MTUzOF19
+eyJoaXN0b3J5IjpbMTU1OTI5MTkwLC0yMDQyMDYxODQsMzQ3ND
+MyOTAzLC0xNzMzNTA1Nzk2LC0xMTcwMjkyMzY1LDIyNzQ1MDQz
+OSwtMTEyNTM5MzIyMSw2NTgwMjEzNjQsNjYxMTA1MTU0LC0yMD
+k5MTA5MDgwLC03Mzk5OTY4MDMsNjU1MTE5NDEzLC0xNDMxOTEz
+NDg3LDE2OTY5NzE1MzhdfQ==
 -->
