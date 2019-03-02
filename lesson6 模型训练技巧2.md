@@ -16,7 +16,7 @@ $w+=v$
 
 # AdaGrad Update
 ![enter image description here](https://lh3.googleusercontent.com/IdpoPmelNjr3ZwXu_iUhN1h_YGM-hxeLn3lZrw8WwtlvUuzJhpurRGjvW0TTQv0nNTeQNMd8hAxg)
-
+1e-7是一个超参数，平滑因子，防止分母为0
 这样做可以使梯度大的方向由于被放缩而减小。
 但是该方法时间一长就会停止更新，为了解决可以引入衰减率
 
@@ -24,7 +24,7 @@ $w+=v$
 ![enter image description here](https://lh3.googleusercontent.com/tN4vFsgluaYAnF_oJ7IagJ--sSKO5ksR2XOS20MdOUw1RM4f7UGYs2jKGqZsoAF6w-hUACW6xNfQ)
 具有AdaGrad Update的优点，又不会停止训练
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjIxMjY5MzcsLTIwOTkxMDkwODAsLTczOT
-k5NjgwMyw2NTUxMTk0MTMsLTE0MzE5MTM0ODcsMTY5Njk3MTUz
-OF19
+eyJoaXN0b3J5IjpbNjYxMTA1MTU0LC0yMDk5MTA5MDgwLC03Mz
+k5OTY4MDMsNjU1MTE5NDEzLC0xNDMxOTEzNDg3LDE2OTY5NzE1
+MzhdfQ==
 -->
