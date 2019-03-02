@@ -56,14 +56,14 @@ $\beta_1=0.9$,$\beta_2=0.995$是一组鲁棒性不错的参数
 有效防止过拟合：每次只是用一半的节点，网络中设计的变量数减少，模型表达能力下降，减少过拟合的几率。
 可以这么理解dropout：
 1. 由于过程中每个特征都可能被随机的失活，所以dropout会让模型更倾向于去依赖更多的特征，来提高自己的准确率
-2. 是很多小模型集成的大模型。失活的神经元在反向传播的过程中梯度为0，它之前与它相连的权重都不会被更新。这就相当于在一次中随机选取了一个子模型的权重拉进行更新。每个小的二进制子模型都只会被一个数据训练（失活是随机的，刚好这个数据遇到了这个失活的模式）
-3. 
+2. 是很多小模型集成的大模型。失活的神经元在反向传播的过程中梯度为0，它之前与它相连的权重都不会被更新。这就相当于在一次中随机选取了一个子模型的权重拉进行更新。每个随意失活后的模型都是一个子模型，都只会被一个数据训练（失活是随机的，刚好这个数据遇到了这个失活的模式）
+![enter image description here](https://lh3.googleusercontent.com/vdAQz4tet3npSRW0IW4f4ebEiKZPd5-0xVUm4Sjauxji-i1JsuYqBtb6U-ZPTVP9kOi0-BYp-9iq)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTM1NjU4MzcsLTIwNDIwNjE4NCwzND
-c0MzI5MDMsLTE3MzM1MDU3OTYsLTExNzAyOTIzNjUsMjI3NDUw
-NDM5LC0xMTI1MzkzMjIxLDY1ODAyMTM2NCw2NjExMDUxNTQsLT
-IwOTkxMDkwODAsLTczOTk5NjgwMyw2NTUxMTk0MTMsLTE0MzE5
-MTM0ODcsMTY5Njk3MTUzOF19
+eyJoaXN0b3J5IjpbNDYwMTQ2ODMsLTIwNDIwNjE4NCwzNDc0Mz
+I5MDMsLTE3MzM1MDU3OTYsLTExNzAyOTIzNjUsMjI3NDUwNDM5
+LC0xMTI1MzkzMjIxLDY1ODAyMTM2NCw2NjExMDUxNTQsLTIwOT
+kxMDkwODAsLTczOTk5NjgwMyw2NTUxMTk0MTMsLTE0MzE5MTM0
+ODcsMTY5Njk3MTUzOF19
 -->
