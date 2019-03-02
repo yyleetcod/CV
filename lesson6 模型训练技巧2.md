@@ -12,7 +12,8 @@ $w+=v$
 算梯度的时候直接到下一个位置算
 ![enter image description here](https://lh3.googleusercontent.com/6fvYdN_jwtRZ4YD0A0-oBBR2hifcqJMMwcbaIcZ-4NJ3Xv3UuU6IJaPhNk6jS0xQXmWgBH5F9LEm)
 越过最优点的幅度不如Momentum Update那么大，每次都往前预测多考虑一点，多次累加起来的效果会好很多
+在很大的神经网络中，最大和最
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczOTk5NjgwMyw2NTUxMTk0MTMsLTE0Mz
-E5MTM0ODcsMTY5Njk3MTUzOF19
+eyJoaXN0b3J5IjpbLTgxOTg1Nzg2NCwtNzM5OTk2ODAzLDY1NT
+ExOTQxMywtMTQzMTkxMzQ4NywxNjk2OTcxNTM4XX0=
 -->
