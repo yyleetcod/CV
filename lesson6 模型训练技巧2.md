@@ -65,11 +65,11 @@ $\beta_1=0.9$,$\beta_2=0.995$是一组鲁棒性不错的参数
 ![enter image description here](https://lh3.googleusercontent.com/dwZZ7xLqsCa_-Rz0ghVrVTq3RA7d0aucsr_PDBr4YR1FNXfHcfIV8jRBgsOiuGvRWSFOqiVfBipj)
 ![enter image description here](https://lh3.googleusercontent.com/VIKt5kopcHSZAzurvMs--j8mB0nq_KZBUNjOFTleTL_MKDo-ZfYy9TFc9z6bj3Mau5EX6F4XEVKf)
 ![enter image description here](https://lh3.googleusercontent.com/pOva4KD4Euw3X9bd-B0BsUb8pkBQQuVakYzUqc5NvASGJsb3UuP3y2LIw02vdsD52JwBrRIND_wo)
-需要对j
+需要对激活函数的输出进行一个补偿（乘上p）
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Njg3NDk4OTksNjk1NTMwNTgyLC00Nj
+eyJoaXN0b3J5IjpbLTIwNzYzMzgxMDAsNjk1NTMwNTgyLC00Nj
 kwNDAwODAsNDYwMTQ2ODMsLTIwNDIwNjE4NCwzNDc0MzI5MDMs
 LTE3MzM1MDU3OTYsLTExNzAyOTIzNjUsMjI3NDUwNDM5LC0xMT
 I1MzkzMjIxLDY1ODAyMTM2NCw2NjExMDUxNTQsLTIwOTkxMDkw
