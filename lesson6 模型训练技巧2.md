@@ -53,11 +53,11 @@ $\beta_1=0.9$,$\beta_2=0.995$是一组鲁棒性不错的参数
 ![enter image description here](https://lh3.googleusercontent.com/epgG28uUD40Hm1VAASJbxW1B2fqp5cr8LeiJh5JppIvFP7kacME-R32HF2wsoGqHU_WXsjwWsTno)
 ![enter image description here](https://lh3.googleusercontent.com/ryQbkcyHJ42fBRt0l5KyPzvchslWmIG3L51DaqGshUcd4sQ6SwXPfbmnhNMAuz5p0-QLuL80fNBe)
 前向传播和反向传播要同时进行dropout（或都不进行）
-有效防止过拟合：每次只是用一半的节点，网络中设计的变量数减少，模型biao
+有效防止过拟合：每次只是用一半的节点，网络中设计的变量数减少，模型表达能力下降，减少过拟合的几率
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc2ODAzNTA3LC0yMDQyMDYxODQsMzQ3ND
-MyOTAzLC0xNzMzNTA1Nzk2LC0xMTcwMjkyMzY1LDIyNzQ1MDQz
-OSwtMTEyNTM5MzIyMSw2NTgwMjEzNjQsNjYxMTA1MTU0LC0yMD
-k5MTA5MDgwLC03Mzk5OTY4MDMsNjU1MTE5NDEzLC0xNDMxOTEz
-NDg3LDE2OTY5NzE1MzhdfQ==
+eyJoaXN0b3J5IjpbMTY4ODQxNTEyOSwtMjA0MjA2MTg0LDM0Nz
+QzMjkwMywtMTczMzUwNTc5NiwtMTE3MDI5MjM2NSwyMjc0NTA0
+MzksLTExMjUzOTMyMjEsNjU4MDIxMzY0LDY2MTEwNTE1NCwtMj
+A5OTEwOTA4MCwtNzM5OTk2ODAzLDY1NTExOTQxMywtMTQzMTkx
+MzQ4NywxNjk2OTcxNTM4XX0=
 -->
