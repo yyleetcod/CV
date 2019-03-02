@@ -17,15 +17,19 @@ $w+=v$
 # AdaGrad Update
 ![enter image description here](https://lh3.googleusercontent.com/IdpoPmelNjr3ZwXu_iUhN1h_YGM-hxeLn3lZrw8WwtlvUuzJhpurRGjvW0TTQv0nNTeQNMd8hAxg)
 1e-7是一个超参数，平滑因子，防止分母为0
-这样做可以使梯度大的方向由于被放缩而减小。
+这样做可以使梯度大的方向由于被放缩而减小。确保梯度大和梯度小的方向补偿相当
 但是该方法时间一长就会停止更新，为了解决可以引入衰减率
 
 # RMSProp Update
 ![enter image description here](https://lh3.googleusercontent.com/tN4vFsgluaYAnF_oJ7IagJ--sSKO5ksR2XOS20MdOUw1RM4f7UGYs2jKGqZsoAF6w-hUACW6xNfQ)
 具有AdaGrad Update的优点，又不会停止训练
 RMSProp Update只考虑最近几个的梯度平方和
+
+# Adam
+rmsprop和momentum的结合：
+$$$Beta_2$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU4MDIxMzY0LDY2MTEwNTE1NCwtMjA5OT
-EwOTA4MCwtNzM5OTk2ODAzLDY1NTExOTQxMywtMTQzMTkxMzQ4
-NywxNjk2OTcxNTM4XX0=
+eyJoaXN0b3J5IjpbLTE0MDc5OTE1NjMsNjU4MDIxMzY0LDY2MT
+EwNTE1NCwtMjA5OTEwOTA4MCwtNzM5OTk2ODAzLDY1NTExOTQx
+MywtMTQzMTkxMzQ4NywxNjk2OTcxNTM4XX0=
 -->
