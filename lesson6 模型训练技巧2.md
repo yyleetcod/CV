@@ -21,9 +21,9 @@ $w+=v$
 
 # RMSProp Update
 ![enter image description here](https://lh3.googleusercontent.com/tN4vFsgluaYAnF_oJ7IagJ--sSKO5ksR2XOS20MdOUw1RM4f7UGYs2jKGqZsoAF6w-hUACW6xNfQ)
-具有AdaGrad Update的you'dia
+具有AdaGrad Update的优点，又不会停止训练
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0NDg3OTkxOSwtMjA5OTEwOTA4MCwtNz
-M5OTk2ODAzLDY1NTExOTQxMywtMTQzMTkxMzQ4NywxNjk2OTcx
-NTM4XX0=
+eyJoaXN0b3J5IjpbLTEwMjI1NjAwODUsLTIwOTkxMDkwODAsLT
+czOTk5NjgwMyw2NTUxMTk0MTMsLTE0MzE5MTM0ODcsMTY5Njk3
+MTUzOF19
 -->
