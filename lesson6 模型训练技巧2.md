@@ -56,13 +56,13 @@ $\beta_1=0.9$,$\beta_2=0.995$是一组鲁棒性不错的参数
 有效防止过拟合：每次只是用一半的节点，网络中设计的变量数减少，模型表达能力下降，减少过拟合的几率。
 可以这么理解dropout：
 1. 由于过程中每个特征都可能被随机的失活，所以dropout会让模型更倾向于去依赖更多的特征，来提高自己的准确率
-2. 是很多小模型集成的大模型
+2. 是很多小模型集成的大模型。失活的神经元在反向传播的过程中ti'du
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjUxNTYyMjUzLC0yMDQyMDYxODQsMzQ3ND
-MyOTAzLC0xNzMzNTA1Nzk2LC0xMTcwMjkyMzY1LDIyNzQ1MDQz
-OSwtMTEyNTM5MzIyMSw2NTgwMjEzNjQsNjYxMTA1MTU0LC0yMD
-k5MTA5MDgwLC03Mzk5OTY4MDMsNjU1MTE5NDEzLC0xNDMxOTEz
-NDg3LDE2OTY5NzE1MzhdfQ==
+eyJoaXN0b3J5IjpbLTI3MTc2MzgwOCwtMjA0MjA2MTg0LDM0Nz
+QzMjkwMywtMTczMzUwNTc5NiwtMTE3MDI5MjM2NSwyMjc0NTA0
+MzksLTExMjUzOTMyMjEsNjU4MDIxMzY0LDY2MTEwNTE1NCwtMj
+A5OTEwOTA4MCwtNzM5OTk2ODAzLDY1NTExOTQxMywtMTQzMTkx
+MzQ4NywxNjk2OTcxNTM4XX0=
 -->
