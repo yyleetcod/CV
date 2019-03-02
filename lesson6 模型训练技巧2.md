@@ -23,8 +23,9 @@ $w+=v$
 # RMSProp Update
 ![enter image description here](https://lh3.googleusercontent.com/tN4vFsgluaYAnF_oJ7IagJ--sSKO5ksR2XOS20MdOUw1RM4f7UGYs2jKGqZsoAF6w-hUACW6xNfQ)
 具有AdaGrad Update的优点，又不会停止训练
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjYxMTA1MTU0LC0yMDk5MTA5MDgwLC03Mz
-k5OTY4MDMsNjU1MTE5NDEzLC0xNDMxOTEzNDg3LDE2OTY5NzE1
-MzhdfQ==
+eyJoaXN0b3J5IjpbMTcwMDQ3ODg5Niw2NjExMDUxNTQsLTIwOT
+kxMDkwODAsLTczOTk5NjgwMyw2NTUxMTk0MTMsLTE0MzE5MTM0
+ODcsMTY5Njk3MTUzOF19
 -->
