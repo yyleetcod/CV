@@ -66,13 +66,15 @@ $\beta_1=0.9$,$\beta_2=0.995$是一组鲁棒性不错的参数
 ![enter image description here](https://lh3.googleusercontent.com/VIKt5kopcHSZAzurvMs--j8mB0nq_KZBUNjOFTleTL_MKDo-ZfYy9TFc9z6bj3Mau5EX6F4XEVKf)
 ![enter image description here](https://lh3.googleusercontent.com/pOva4KD4Euw3X9bd-B0BsUb8pkBQQuVakYzUqc5NvASGJsb3UuP3y2LIw02vdsD52JwBrRIND_wo)
 需要对激活函数的输出进行一个补偿（乘上p）
+![enter image description here](https://lh3.googleusercontent.com/3yiWOu0EbHxiIr_4yGf4AhFGEy-SjSefwp71W1qGxfo3xj8BceaxzB55zfxmmsV57bAOGeacMYbe)
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzYzMzgxMDAsNjk1NTMwNTgyLC00Nj
-kwNDAwODAsNDYwMTQ2ODMsLTIwNDIwNjE4NCwzNDc0MzI5MDMs
-LTE3MzM1MDU3OTYsLTExNzAyOTIzNjUsMjI3NDUwNDM5LC0xMT
-I1MzkzMjIxLDY1ODAyMTM2NCw2NjExMDUxNTQsLTIwOTkxMDkw
-ODAsLTczOTk5NjgwMyw2NTUxMTk0MTMsLTE0MzE5MTM0ODcsMT
-Y5Njk3MTUzOF19
+eyJoaXN0b3J5IjpbLTEzNzEwOTkyNzQsLTIwNzYzMzgxMDAsNj
+k1NTMwNTgyLC00NjkwNDAwODAsNDYwMTQ2ODMsLTIwNDIwNjE4
+NCwzNDc0MzI5MDMsLTE3MzM1MDU3OTYsLTExNzAyOTIzNjUsMj
+I3NDUwNDM5LC0xMTI1MzkzMjIxLDY1ODAyMTM2NCw2NjExMDUx
+NTQsLTIwOTkxMDkwODAsLTczOTk5NjgwMyw2NTUxMTk0MTMsLT
+E0MzE5MTM0ODcsMTY5Njk3MTUzOF19
 -->
