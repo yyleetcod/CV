@@ -11,8 +11,22 @@ Notice that if all neurons in a single depth slice are using the same weight vec
 
 Note that sometimes the parameter sharing assumption may not make sense. This is especially the case when the input images to a ConvNet have some specific centered structure, where we should expect, for example, that completely different features should be learned on one side of the image than another. One practical example is when the input are faces that have been centered in the image. You might expect that different eye-specific or hair-specific features could (and should) be learned in different spatial locations. In that case it is common to relax the parameter sharing scheme, and instead simply call the layer a Locally-Connected Layer.
 
+**Summary**. To summarize, the Conv Layer:
+
+-   Accepts a volume of size  W1×H1×D1
+-   Requires four hyperparameters:
+    -   Number of filters  K,
+    -   their spatial extent  F,
+    -   the stride  S,
+    -   the amount of zero padding  P.
+-   Produces a volume of size  W2×H2×D2  where:
+    -   W2=(W1−F+2P)/S+1
+    -   H2=(H1−F+2P)/S+1  (i.e. width and height are computed equally by symmetry)
+    -   D2=K
+-   With parameter sharing, it introduces  F⋅F⋅D1  weights per filter, for a total of  (F⋅F⋅D1)⋅K  weights and  K  biases.
+-   In the output volume, the  dd-th depth slice (of size  W2×H2) is the result of performing a valid convolution of the  d-th filter over the input volume with a stride of  S, and then offset by  d-th bias.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzNjg4NzcxOSwtMTMxNzExMTIxMiwtMz
-Y4ODg0NzMyLC0xODUyODI4ODg1XX0=
+eyJoaXN0b3J5IjpbNjIyMjg3NDk1LC00MzY4ODc3MTksLTEzMT
+cxMTEyMTIsLTM2ODg4NDczMiwtMTg1MjgyODg4NV19
 -->
