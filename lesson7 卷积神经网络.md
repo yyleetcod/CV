@@ -40,8 +40,12 @@ It is common to periodically insert a Pooling layer in-between successive Conv l
     -   D2=D1
 -   Introduces zero parameters since it computes a fixed function of the input
 -   For Pooling layers, it is not common to pad the input using zero-padding.
+
+#### Normalization Layer
+
+Many types of normalization layers have been proposed for use in ConvNet architectures, sometimes with the intentions of implementing inhibition schemes observed in the biological brain. However, these layers have since fallen out of favor because in practice their contribution has been shown to be minimal, if any. For various types of normalizations, see the discussion in Alex Krizhevsky’s  [cuda-convnet library API](http://code.google.com/p/cuda-convnet/wiki/LayerParams#Local_response_normalization_layer_(same_map)).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0NTE3Njc1NCw2MjIyODc0OTUsLTQzNj
-g4NzcxOSwtMTMxNzExMTIxMiwtMzY4ODg0NzMyLC0xODUyODI4
-ODg1XX0=
+eyJoaXN0b3J5IjpbLTI3NzY2NTA5OSwxNDQ1MTc2NzU0LDYyMj
+I4NzQ5NSwtNDM2ODg3NzE5LC0xMzE3MTExMjEyLC0zNjg4ODQ3
+MzIsLTE4NTI4Mjg4ODVdfQ==
 -->
