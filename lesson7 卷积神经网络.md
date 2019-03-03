@@ -9,8 +9,10 @@ Notice that if all neurons in a single depth slice are using the same weight vec
 
 **Notice that the parameter sharing assumption is relatively reasonable: If detecting a horizontal edge is important at some location in the image, it should intuitively be useful at some other location as well due to the translationally-invariant structure of images. There is therefore no need to relearn to detect a horizontal edge at every one of the 55*55 distinct locations in the Conv layer output volume.**
 
+Note that sometimes the parameter sharing assumption may not make sense. This is especially the case when the input images to a ConvNet have some specific centered structure, where we should expect, for example, that completely different features should be learned on one side of the image than another. One practical example is when the input are faces that have been centered in the image. You might expect that different eye-specific or hair-specific features could (and should) be learned in different spatial locations. In that case it is common to relax the parameter sharing scheme, and instead simply call the layer a Locally-Connected Layer.
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTcxMTEyMTIsLTM2ODg4NDczMiwtMT
-g1MjgyODg4NV19
+eyJoaXN0b3J5IjpbLTQzNjg4NzcxOSwtMTMxNzExMTIxMiwtMz
+Y4ODg0NzMyLC0xODUyODI4ODg1XX0=
 -->
