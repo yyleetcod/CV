@@ -28,9 +28,20 @@ Note that sometimes the parameter sharing assumption may not make sense. This is
 
 # Pooling Layer
 
+It is common to periodically insert a Pooling layer in-between successive Conv layers in a ConvNet architecture. Its function is to progressively reduce the spatial size of the representation to reduce the amount of parameters and computation in the network, and hence to also control overfitting. The Pooling Layer operates independently on every depth slice of the input and resizes it spatially, using the MAX operation. The most common form is a pooling layer with filters of size 2x2 applied with a stride of 2 downsamples every depth slice in the input by 2 along both width and height, discarding 75% of the activations. Every MAX operation would in this case be taking a max over 4 numbers (little 2x2 region in some depth slice). The depth dimension remains unchanged. More generally, the pooling layer:
 
+-   Accepts a volume of size  W1×H1×D1
+-   Requires two hyperparameters:
+    -   their spatial extent  F,
+    -   the stride  S,
+-   Produces a volume of size  W2×H2×D2 where:
+    -   W2=(W1−F)/S+1
+    -   H2=(H1−F)/S+1
+    -   D2=D1
+-   Introduces zero parameters since it computes a fixed function of the input
+-   For Pooling layers, it is not common to pad the input using zero-padding.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTgzOTAxNzUsNjIyMjg3NDk1LC00Mz
-Y4ODc3MTksLTEzMTcxMTEyMTIsLTM2ODg4NDczMiwtMTg1Mjgy
-ODg4NV19
+eyJoaXN0b3J5IjpbMTQ0NTE3Njc1NCw2MjIyODc0OTUsLTQzNj
+g4NzcxOSwtMTMxNzExMTIxMiwtMzY4ODg0NzMyLC0xODUyODI4
+ODg1XX0=
 -->
