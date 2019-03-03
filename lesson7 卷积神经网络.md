@@ -70,9 +70,15 @@ where the `*` indicates repetition, and the `POOL?` indicates an optional poolin
 
 _Prefer a stack of small filter CONV to one large receptive field CONV layer_. Suppose that you stack three 3x3 CONV layers on top of each other (with non-linearities in between, of course). In this arrangement, each neuron on the first CONV layer has a 3x3 view of the input volume. A neuron on the second CONV layer has a 3x3 view of the first CONV layer, and hence by extension a 5x5 view of the input volume. Similarly, a neuron on the third CONV layer has a 3x3 view of the 2nd CONV layer, and hence a 7x7 view of the input volume. Suppose that instead of these three layers of 3x3 CONV, we only wanted to use a single CONV layer with 7x7 receptive fields. These neurons would have a receptive field size of the input volume that is identical in spatial extent (7x7), but with several disadvantages. First, the neurons would be computing a linear function over the input, while the three stacks of CONV layers contain non-linearities that make their features more expressive. Second, if we suppose that all the volumes have C channels, then it can be seen that the single 7x7 CONV layer would contain $C×(7×7×C)=49C^2$ parameters, while the three 3x3 CONV layers would only contain $3×(C×(3×3×C))=27C^2$ parameters. Intuitively, stacking CONV layers with tiny filters as opposed to having one CONV layer with big filters allows us to express more powerful features of the input, and with fewer parameters. As a practical disadvantage, we might need more memory to hold all the intermediate CONV layer results if we plan to do backpropagation.
 
+# Layer Sizing Patterns
 
+Until now we’ve omitted mentions of common hyperparameters used in each of the layers in a ConvNet. We will first state the common rules of thumb for sizing the architectures and then follow the rules with a discussion of the notation:
+
+The  **input layer**  (that contains the image) should be divisible by 2 many times. Common numbers include 32 (e.g. CIFAR-10), 64, 96 (e.g. STL-10), or 224 (e.g. common ImageNet ConvNets), 384, and 512.
+
+The  **conv layers**  should be using small filters (e.g. 3x3 or at most 5x5), using a stride of  S=1S=1, and crucially, padding the input volume with zeros in such way that the conv layer does not alter the spatial dimensions of the input. That is, when  F=3F=3, then using  P=1P=1  will retain the original size of the input. When  F=5F=5,  P=2P=2. For a general  FF, it can be seen that  P=(F−1)/2P=(F−1)/2  preserves the input size. If you must use bigger filter sizes (such as 7x7 or so), it is only common to see this on the very first conv layer that is looking at the input image.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExNDg0OTQ4NSwtMTE0Njc3NTQzOSwtMT
+eyJoaXN0b3J5IjpbMTY3MjQ1MzQ2MiwtMTE0Njc3NTQzOSwtMT
 QzMDU0MzQ4MywxMzA0NDUzODEzLDE0NDUxNzY3NTQsNjIyMjg3
 NDk1LC00MzY4ODc3MTksLTEzMTcxMTEyMTIsLTM2ODg4NDczMi
 wtMTg1MjgyODg4NV19
