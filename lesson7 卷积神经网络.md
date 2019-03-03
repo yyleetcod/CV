@@ -1,3 +1,4 @@
+# Convolutional Layer
 When dealing with high-dimensional inputs such as images, as we saw above it is impractical to connect neurons to all neurons in the previous volume. Instead, we will connect each neuron to only a local region of the input volume. The spatial extent of this connectivity is a hyperparameter called the receptive field of the neuron (equivalently this is the filter size). The extent of the connectivity along the depth axis is always equal to the depth of the input volume. It is important to emphasize again this asymmetry in how we treat the spatial dimensions (width and height) and the depth dimension: The connections are local in space (along width and height), but always full along the entire depth of the input volume.
 
 Parameter Sharing. Parameter sharing scheme is used in Convolutional Layers to control the number of parameters. Using the real-world example above, we see that there are 55*55*96 = 290,400 neurons in the first Conv Layer, and each has 11*11*3 = 363 weights and 1 bias. Together, this adds up to 290400 * 364 = 105,705,600 parameters on the first layer of the ConvNet alone. Clearly, this number is very high.
@@ -8,5 +9,5 @@ Notice that if all neurons in a single depth slice are using the same weight vec
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg0NzUyODgxLC0xODUyODI4ODg1XX0=
+eyJoaXN0b3J5IjpbLTM2ODg4NDczMiwtMTg1MjgyODg4NV19
 -->
