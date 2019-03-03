@@ -58,8 +58,9 @@ It is worth noting that the only difference between FC and CONV layers is that t
 
 For example, if 224x224 image gives a volume of size [7x7x512] - i.e. a reduction by 32, then forwarding an image of size 384x384 through the converted architecture would give the equivalent volume in size [12x12x512], since 384/32 = 12. Following through with the next 3 CONV layers that we just converted from FC layers would now give the final volume of size [6x6x1000], since (12 - 7)/1 + 1 = 6. Note that instead of a single vector of class scores of size [1x1x1000], we’re now getting an entire 6x6 array of class scores across the 384x384 image.
 Naturally, forwarding the converted ConvNet a single time is much more efficient than iterating the original ConvNet over all those 36 locations, since the 36 evaluations share computation. This trick is often used in practice to get better performance, where for example, it is common to resize an image to make it bigger, use a converted ConvNet to evaluate the class scores at many spatial positions and then average the class scores.
+Lastly, what if we wanted to efficiently apply the original ConvNet over the image but at a stride smaller than 32 pixels? We could achieve this with multiple forward passes. For example, note that if we wanted to use a stride of 16 pixels we could do so by combining the volumes received by forwarding the converted ConvNet twice: First over the original image and second over the image but with the image shifted spatially by 16 pixels along both width and height.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4MDkyNDk2NiwxMzA0NDUzODEzLDE0ND
+eyJoaXN0b3J5IjpbMjEwOTE0MDk5OCwxMzA0NDUzODEzLDE0ND
 UxNzY3NTQsNjIyMjg3NDk1LC00MzY4ODc3MTksLTEzMTcxMTEy
 MTIsLTM2ODg4NDczMiwtMTg1MjgyODg4NV19
 -->
