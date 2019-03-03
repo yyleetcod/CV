@@ -66,9 +66,12 @@ The most common form of a ConvNet architecture stacks a few CONV-RELU layers, fo
 
 `INPUT -> [[CONV -> RELU]*N -> POOL?]*M -> [FC -> RELU]*K -> FC`
 
-where the `*` indicates repetition, and the `POOL?` indicates an optional pooling layer. Moreover, `N >= 0` (and usually `N <= 3`), `M >= 0`, `K >= 0` (and usually `K < 3`). For example, here are some common ConvNet architectures you may see that follow this pattern:
+where the `*` indicates repetition, and the `POOL?` indicates an optional pooling layer. Moreover, `N >= 0` (and usually `N <= 3`), `M >= 0`, `K >= 0` (and usually `K < 3`). 
+
+_Prefer a stack of small filter CONV to one large receptive field CONV layer_. Suppose that you stack three 3x3 CONV layers on top of each other (with non-linearities in between, of course). In this arrangement, each neuron on the first CONV layer has a 3x3 view of the input volume. A neuron on the second CONV layer has a 3x3 view of the first CONV layer, and hence by extension a 5x5 view of the input volume. Similarly, a neuron on the third CONV layer has a 3x3 view of the 2nd CONV layer, and hence a 7x7 view of the input volume. Suppose that instead of these three layers of 3x3 CONV, we only wanted to use a single CONV layer with 7x7 receptive fields. These neurons would have a receptive field size of the input volume that is identical in spatial extent (7x7), but with several disadvantages. First, the neurons would be computing a linear function over the input, while the three stacks of CONV layers contain non-linearities that make their features more expressive. Second, if we suppose that all the volumes have C channels, then it can be seen that the single 7x7 CONV layer would contain $C×(7×7×C)=49C^2$ parameters, while the three 3x3 CONV layers would only contain $3×(C×(3×3×C))=27C^2$ parameters. Intuitively, stacking CONV layers with tiny filters as opposed to having one CONV layer with big filters allows us to express more powerful features of the input, and with fewer parameters. As a practical disadvantage, we might need more memory to hold all the intermediate CONV layer results if we plan to do backpropagation.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzA1NDM0ODMsMTMwNDQ1MzgxMywxND
-Q1MTc2NzU0LDYyMjI4NzQ5NSwtNDM2ODg3NzE5LC0xMzE3MTEx
-MjEyLC0zNjg4ODQ3MzIsLTE4NTI4Mjg4ODVdfQ==
+eyJoaXN0b3J5IjpbLTExNDY3NzU0MzksLTE0MzA1NDM0ODMsMT
+MwNDQ1MzgxMywxNDQ1MTc2NzU0LDYyMjI4NzQ5NSwtNDM2ODg3
+NzE5LC0xMzE3MTExMjEyLC0zNjg4ODQ3MzIsLTE4NTI4Mjg4OD
+VdfQ==
 -->
