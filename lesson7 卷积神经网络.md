@@ -7,7 +7,10 @@ It turns out that we can dramatically reduce the number of parameters by making 
 
 Notice that if all neurons in a single depth slice are using the same weight vector, then the forward pass of the CONV layer can in each depth slice be computed as a convolution of the neuron’s weights with the input volume (Hence the name: Convolutional Layer). This is why it is common to refer to the sets of weights as a filter (or a kernel), that is convolved with the input.
 
+**Notice that the parameter sharing assumption is relatively reasonable: If detecting a horizontal edge is important at some location in the image, it should intuitively be useful at some other location as well due to the translationally-invariant structure of images. There is therefore no need to relearn to detect a horizontal edge at every one of the 55*55 distinct locations in the Conv layer output volume.**
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2ODg4NDczMiwtMTg1MjgyODg4NV19
+eyJoaXN0b3J5IjpbLTEzMTcxMTEyMTIsLTM2ODg4NDczMiwtMT
+g1MjgyODg4NV19
 -->
