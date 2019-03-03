@@ -65,9 +65,10 @@ Lastly, what if we wanted to efficiently apply the original ConvNet over the ima
 The most common form of a ConvNet architecture stacks a few CONV-RELU layers, follows them with POOL layers, and repeats this pattern until the image has been merged spatially to a small size. At some point, it is common to transition to fully-connected layers. The last fully-connected layer holds the output, such as the class scores. In other words, the most common ConvNet architecture follows the pattern:
 
 `INPUT -> [[CONV -> RELU]*N -> POOL?]*M -> [FC -> RELU]*K -> FC`
+
 where the `*` indicates repetition, and the `POOL?` indicates an optional pooling layer. Moreover, `N >= 0` (and usually `N <= 3`), `M >= 0`, `K >= 0` (and usually `K < 3`). For example, here are some common ConvNet architectures you may see that follow this pattern:
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODYyNTM3NzMsMTMwNDQ1MzgxMywxND
+eyJoaXN0b3J5IjpbLTE0MzA1NDM0ODMsMTMwNDQ1MzgxMywxND
 Q1MTc2NzU0LDYyMjI4NzQ5NSwtNDM2ODg3NzE5LC0xMzE3MTEx
 MjEyLC0zNjg4ODQ3MzIsLTE4NTI4Mjg4ODVdfQ==
 -->
