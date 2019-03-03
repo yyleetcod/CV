@@ -59,8 +59,15 @@ It is worth noting that the only difference between FC and CONV layers is that t
 For example, if 224x224 image gives a volume of size [7x7x512] - i.e. a reduction by 32, then forwarding an image of size 384x384 through the converted architecture would give the equivalent volume in size [12x12x512], since 384/32 = 12. Following through with the next 3 CONV layers that we just converted from FC layers would now give the final volume of size [6x6x1000], since (12 - 7)/1 + 1 = 6. Note that instead of a single vector of class scores of size [1x1x1000], we’re now getting an entire 6x6 array of class scores across the 384x384 image.
 Naturally, forwarding the converted ConvNet a single time is much more efficient than iterating the original ConvNet over all those 36 locations, since the 36 evaluations share computation. This trick is often used in practice to get better performance, where for example, it is common to resize an image to make it bigger, use a converted ConvNet to evaluate the class scores at many spatial positions and then average the class scores.
 Lastly, what if we wanted to efficiently apply the original ConvNet over the image but at a stride smaller than 32 pixels? We could achieve this with multiple forward passes. For example, note that if we wanted to use a stride of 16 pixels we could do so by combining the volumes received by forwarding the converted ConvNet twice: First over the original image and second over the image but with the image shifted spatially by 16 pixels along both width and height.
+
+# Layer Patterns
+
+The most common form of a ConvNet architecture stacks a few CONV-RELU layers, follows them with POOL layers, and repeats this pattern until the image has been merged spatially to a small size. At some point, it is common to transition to fully-connected layers. The last fully-connected layer holds the output, such as the class scores. In other words, the most common ConvNet architecture follows the pattern:
+
+`INPUT -> [[CONV -> RELU]*N -> POOL?]*M -> [FC -> RELU]*K -> FC`
+where the `*` indicates repetition, and the `POOL?` indicates an optional pooling layer. Moreover, `N >= 0` (and usually `N <= 3`), `M >= 0`, `K >= 0` (and usually `K < 3`). For example, here are some common ConvNet architectures you may see that follow this pattern:
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwOTE0MDk5OCwxMzA0NDUzODEzLDE0ND
-UxNzY3NTQsNjIyMjg3NDk1LC00MzY4ODc3MTksLTEzMTcxMTEy
-MTIsLTM2ODg4NDczMiwtMTg1MjgyODg4NV19
+eyJoaXN0b3J5IjpbLTE0ODYyNTM3NzMsMTMwNDQ1MzgxMywxND
+Q1MTc2NzU0LDYyMjI4NzQ5NSwtNDM2ODg3NzE5LC0xMzE3MTEx
+MjEyLC0zNjg4ODQ3MzIsLTE4NTI4Mjg4ODVdfQ==
 -->
