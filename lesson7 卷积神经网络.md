@@ -26,7 +26,11 @@ Note that sometimes the parameter sharing assumption may not make sense. This is
 -   With parameter sharing, it introduces  F⋅F⋅D1  weights per filter, for a total of  (F⋅F⋅D1)⋅K  weights and  K  biases.
 -   In the output volume, the  dd-th depth slice (of size  W2×H2) is the result of performing a valid convolution of the  d-th filter over the input volume with a stride of  S, and then offset by  d-th bias.
 
+# Pooling Layer
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjIyMjg3NDk1LC00MzY4ODc3MTksLTEzMT
-cxMTEyMTIsLTM2ODg4NDczMiwtMTg1MjgyODg4NV19
+eyJoaXN0b3J5IjpbLTExNTgzOTAxNzUsNjIyMjg3NDk1LC00Mz
+Y4ODc3MTksLTEzMTcxMTEyMTIsLTM2ODg4NDczMiwtMTg1Mjgy
+ODg4NV19
 -->
