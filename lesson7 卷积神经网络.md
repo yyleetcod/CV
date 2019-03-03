@@ -56,9 +56,11 @@ It is worth noting that the only difference between FC and CONV layers is that t
 -   For any CONV layer there is an FC layer that implements the same forward function. The weight matrix would be a large matrix that is mostly zero except for at certain blocks (due to local connectivity) where the weights in many of the blocks are equal (due to parameter sharing).
 -   Conversely, any FC layer can be converted to a CONV layer. For example, an FC layer with  K=4096K=4096  that is looking at some input volume of size  7×7×5127×7×512  can be equivalently expressed as a CONV layer with  F=7,P=0,S=1,K=4096F=7,P=0,S=1,K=4096. In other words, we are setting the filter size to be exactly the size of the input volume, and hence the output will simply be  1×1×40961×1×4096  since only a single depth column “fits” across the input volume, giving identical result as the initial FC layer.
 
+For example, if 224x224 image gives a volume of size [7x7x512] - i.e. a reduction by 32, then forwarding an image of size 384x384 through the converted architecture would give the equivalent volume in size [12x12x512], since 384/32 = 12. Following through with the next 3 CONV layers that we just converted from FC layers would now give the final volume of size [6x6x1000], since (12 - 7)/1 + 1 = 6. Note that instead of a single vector of class scores of size [1x1x1000], we’re now getting an entire 6x6 array of class scores across the 384x384 image.
 
+>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQzMjk2NzIwLDEzMDQ0NTM4MTMsMTQ0NT
-E3Njc1NCw2MjIyODc0OTUsLTQzNjg4NzcxOSwtMTMxNzExMTIx
-MiwtMzY4ODg0NzMyLC0xODUyODI4ODg1XX0=
+eyJoaXN0b3J5IjpbLTgxODY4MTM3NSwxMzA0NDUzODEzLDE0ND
+UxNzY3NTQsNjIyMjg3NDk1LC00MzY4ODc3MTksLTEzMTcxMTEy
+MTIsLTM2ODg4NDczMiwtMTg1MjgyODg4NV19
 -->
