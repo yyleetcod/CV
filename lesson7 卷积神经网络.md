@@ -76,10 +76,12 @@ Until now we’ve omitted mentions of common hyperparameters used in each of the
 
 The  **input layer**  (that contains the image) should be divisible by 2 many times. Common numbers include 32 (e.g. CIFAR-10), 64, 96 (e.g. STL-10), or 224 (e.g. common ImageNet ConvNets), 384, and 512.
 
-The  **conv layers**  should be using small filters (e.g. 3x3 or at most 5x5), using a stride of  S=1S=1, and crucially, padding the input volume with zeros in such way that the conv layer does not alter the spatial dimensions of the input. That is, when  F=3F=3, then using  P=1P=1  will retain the original size of the input. When  F=5F=5,  P=2P=2. For a general  FF, it can be seen that  P=(F−1)/2P=(F−1)/2  preserves the input size. If you must use bigger filter sizes (such as 7x7 or so), it is only common to see this on the very first conv layer that is looking at the input image.
+The  **conv layers**  should be using small filters (e.g. 3x3 or at most 5x5), using a stride of  S=1, and crucially, padding the input volume with zeros in such way that the conv layer does not alter the spatial dimensions of the input. That is, when  F=3, then using  P=1 will retain the original size of the input. When  F=5,  P=2. For a general  F, it can be seen that  P=(F−1)/2 preserves the input size. If you must use bigger filter sizes (such as 7x7 or so), it is only common to see this on the very first conv layer that is looking at the input image.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3MjQ1MzQ2MiwtMTE0Njc3NTQzOSwtMT
-QzMDU0MzQ4MywxMzA0NDUzODEzLDE0NDUxNzY3NTQsNjIyMjg3
-NDk1LC00MzY4ODc3MTksLTEzMTcxMTEyMTIsLTM2ODg4NDczMi
-wtMTg1MjgyODg4NV19
+eyJoaXN0b3J5IjpbLTE1NjA1MjA1NzAsLTExNDY3NzU0MzksLT
+E0MzA1NDM0ODMsMTMwNDQ1MzgxMywxNDQ1MTc2NzU0LDYyMjI4
+NzQ5NSwtNDM2ODg3NzE5LC0xMzE3MTExMjEyLC0zNjg4ODQ3Mz
+IsLTE4NTI4Mjg4ODVdfQ==
 -->
