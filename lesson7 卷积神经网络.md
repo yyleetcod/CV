@@ -84,10 +84,12 @@ _Reducing sizing headaches._  The scheme presented above is pleasing because all
 
 _Why use stride of 1 in CONV?_  Smaller strides work better in practice. Additionally, as already mentioned stride 1 allows us to leave all spatial down-sampling to the POOL layers, with the CONV layers only transforming the input volume depth-wise.
 
+_Why use padding?_  In addition to the aforementioned benefit of keeping the spatial sizes constant after CONV, doing this actually improves performance. If the CONV layers were to not zero-pad the inputs and only perform valid convolutions, then the size of the volumes would reduce by a small amount after each CONV, and the information at the borders would be “washed away” too quickly.
 
+_Compromising based on memory constraints._  In some cases (especially early in the ConvNet architectures), the amount of memory can build up very quickly with the rules of thumb presented above. For example, filtering a 224x224x3 image with three 3x3 CONV layers with 64 filters each and padding 1 would create three activation volumes of size [224x224x64]. This amounts to a total of about 10 million activations, or 72MB of memory (per image, for both activations and gradients). Since GPUs are often bottlenecked by memory, it may be necessary to compromise. In practice, people prefer to make the compromise at only the first CONV layer of the network. For example, one compromise might be to use a first CONV layer with filter sizes of 7x7 and stride of 2 (as seen in a ZF net). As another example, an AlexNet uses filter sizes of 11x11 and stride of 4.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk5NjMyNDg3LC0xMTQ2Nzc1NDM5LC0xND
-MwNTQzNDgzLDEzMDQ0NTM4MTMsMTQ0NTE3Njc1NCw2MjIyODc0
-OTUsLTQzNjg4NzcxOSwtMTMxNzExMTIxMiwtMzY4ODg0NzMyLC
-0xODUyODI4ODg1XX0=
+eyJoaXN0b3J5IjpbLTEzODU0NTE5NzksNTk5NjMyNDg3LC0xMT
+Q2Nzc1NDM5LC0xNDMwNTQzNDgzLDEzMDQ0NTM4MTMsMTQ0NTE3
+Njc1NCw2MjIyODc0OTUsLTQzNjg4NzcxOSwtMTMxNzExMTIxMi
+wtMzY4ODg0NzMyLC0xODUyODI4ODg1XX0=
 -->
