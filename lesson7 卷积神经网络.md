@@ -78,10 +78,16 @@ The  **input layer**  (that contains the image) should be divisible by 2 many ti
 
 The  **conv layers**  should be using small filters (e.g. 3x3 or at most 5x5), using a stride of  S=1, and crucially, padding the input volume with zeros in such way that the conv layer does not alter the spatial dimensions of the input. That is, when  F=3, then using  P=1 will retain the original size of the input. When  F=5,  P=2. For a general  F, it can be seen that  P=(F−1)/2 preserves the input size. If you must use bigger filter sizes (such as 7x7 or so), it is only common to see this on the very first conv layer that is looking at the input image.
 
+The  **pool layers**  are in charge of downsampling the spatial dimensions of the input. The most common setting is to use max-pooling with 2x2 receptive fields (i.e.  F=2F=2), and with a stride of 2 (i.e.  S=2S=2). Note that this discards exactly 75% of the activations in an input volume (due to downsampling by 2 in both width and height). Another slightly less common setting is to use 3x3 receptive fields with a stride of 2, but this makes. It is very uncommon to see receptive field sizes for max pooling that are larger than 3 because the pooling is then too lossy and aggressive. This usually leads to worse performance.
+
+_Reducing sizing headaches._  The scheme presented above is pleasing because all the CONV layers preserve the spatial size of their input, while the POOL layers alone are in charge of down-sampling the volumes spatially. In an alternative scheme where we use strides greater than 1 or don’t zero-pad the input in CONV layers, we would have to very carefully keep track of the input volumes throughout the CNN architecture and make sure that all strides and filters “work out”, and that the ConvNet architecture is nicely and symmetrically wired.
+
+_Why use stride of 1 in CONV?_  Smaller strides work better in practice. Additionally, as already mentioned stride 1 allows us to leave all spatial down-sampling to the POOL layers, with the CONV layers only transforming the input volume depth-wise.
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjA1MjA1NzAsLTExNDY3NzU0MzksLT
-E0MzA1NDM0ODMsMTMwNDQ1MzgxMywxNDQ1MTc2NzU0LDYyMjI4
-NzQ5NSwtNDM2ODg3NzE5LC0xMzE3MTExMjEyLC0zNjg4ODQ3Mz
-IsLTE4NTI4Mjg4ODVdfQ==
+eyJoaXN0b3J5IjpbNTk5NjMyNDg3LC0xMTQ2Nzc1NDM5LC0xND
+MwNTQzNDgzLDEzMDQ0NTM4MTMsMTQ0NTE3Njc1NCw2MjIyODc0
+OTUsLTQzNjg4NzcxOSwtMTMxNzExMTIxMiwtMzY4ODg0NzMyLC
+0xODUyODI4ODg1XX0=
 -->
