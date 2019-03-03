@@ -41,6 +41,13 @@ It is common to periodically insert a Pooling layer in-between successive Conv l
 -   Introduces zero parameters since it computes a fixed function of the input
 -   For Pooling layers, it is not common to pad the input using zero-padding.
 
+The function of Pooling is to progressively reduce the spatial size of the input representation [4]. In particular, pooling
+
+-   makes the input representations (feature dimension) smaller and more manageable
+-   reduces the number of parameters and computations in the network, therefore, controlling [overfitting](https://en.wikipedia.org/wiki/Overfitting) [4]
+-   makes the network invariant to small transformations, distortions and translations in the input image (a small distortion in input will not change the output of Pooling – since we take the maximum / average value in a local neighborhood).
+-   helps us arrive at an almost scale invariant representation of our image (the exact term is “equivariant”). This is very powerful since we can detect objects in an image no matter where they are located 
+
 # Normalization Layer
 
 Many types of normalization layers have been proposed for use in ConvNet architectures, sometimes with the intentions of implementing inhibition schemes observed in the biological brain. However, these layers have since fallen out of favor because in practice their contribution has been shown to be minimal, if any. For various types of normalizations, see the discussion in Alex Krizhevsky’s  [cuda-convnet library API](http://code.google.com/p/cuda-convnet/wiki/LayerParams#Local_response_normalization_layer_(same_map)).
@@ -98,9 +105,9 @@ The largest bottleneck to be aware of when constructing ConvNet architectures is
 
 Once you have a rough estimate of the total number of values (for activations, gradients, and misc), the number should be converted to size in GB. Take the number of values, multiply by 4 to get the raw number of bytes (since every floating point is 4 bytes, or maybe by 8 for double precision), and then divide by 1024 multiple times to get the amount of memory in KB, MB, and finally GB. If your network doesn’t fit, a common heuristic to “make it fit” is to decrease the batch size, since most of the memory is usually consumed by the activations.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzcyNDcwMTIsLTEzODU0NTE5NzksNT
-k5NjMyNDg3LC0xMTQ2Nzc1NDM5LC0xNDMwNTQzNDgzLDEzMDQ0
-NTM4MTMsMTQ0NTE3Njc1NCw2MjIyODc0OTUsLTQzNjg4NzcxOS
-wtMTMxNzExMTIxMiwtMzY4ODg0NzMyLC0xODUyODI4ODg1XX0=
-
+eyJoaXN0b3J5IjpbNjcwODEwNzE0LC0xOTM3MjQ3MDEyLC0xMz
+g1NDUxOTc5LDU5OTYzMjQ4NywtMTE0Njc3NTQzOSwtMTQzMDU0
+MzQ4MywxMzA0NDUzODEzLDE0NDUxNzY3NTQsNjIyMjg3NDk1LC
+00MzY4ODc3MTksLTEzMTcxMTEyMTIsLTM2ODg4NDczMiwtMTg1
+MjgyODg4NV19
 -->
