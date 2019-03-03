@@ -49,14 +49,16 @@ Many types of normalization layers have been proposed for use in ConvNet archite
 
 Neurons in a fully connected layer have full connections to all activations in the previous layer, as seen in regular Neural Networks. Their activations can hence be computed with a matrix multiplication followed by a bias offset.
 
-## Converting FC layers to CONV layers
+# Converting FC layers to CONV layers
 
 It is worth noting that the only difference between FC and CONV layers is that the neurons in the CONV layer are connected only to a local region in the input, and that many of the neurons in a CONV volume share parameters. However, the neurons in both layers still compute dot products, so their functional form is identical. Therefore, it turns out that it’s possible to convert between FC and CONV layers:
 
 -   For any CONV layer there is an FC layer that implements the same forward function. The weight matrix would be a large matrix that is mostly zero except for at certain blocks (due to local connectivity) where the weights in many of the blocks are equal (due to parameter sharing).
 -   Conversely, any FC layer can be converted to a CONV layer. For example, an FC layer with  K=4096K=4096  that is looking at some input volume of size  7×7×5127×7×512  can be equivalently expressed as a CONV layer with  F=7,P=0,S=1,K=4096F=7,P=0,S=1,K=4096. In other words, we are setting the filter size to be exactly the size of the input volume, and hence the output will simply be  1×1×40961×1×4096  since only a single depth column “fits” across the input volume, giving identical result as the initial FC layer.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjkyMTY5OTI1LDEzMDQ0NTM4MTMsMTQ0NT
+eyJoaXN0b3J5IjpbOTQzMjk2NzIwLDEzMDQ0NTM4MTMsMTQ0NT
 E3Njc1NCw2MjIyODc0OTUsLTQzNjg4NzcxOSwtMTMxNzExMTIx
 MiwtMzY4ODg0NzMyLC0xODUyODI4ODg1XX0=
 -->
