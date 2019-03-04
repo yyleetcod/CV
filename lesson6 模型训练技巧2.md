@@ -83,11 +83,11 @@ N = (Tens or Hundreds of) Millions
 这个p的放缩只是一种近似，因为激活函数的非线性。而且是一种期望的概念
 
 # Regularization
-
+![enter image description here](https://lh3.googleusercontent.com/q1XI_oQEwtlsGFs4BIFuKqS3WVPTw0q1DR0k5Ro5m1_TVQyfes1qnj4rY2qIZQ9Ohp1BmevJr-bV)
 
 # Gradient Checking
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDA0NDczNzMsLTExMjkwNjU0MDgsLT
+eyJoaXN0b3J5IjpbLTE0OTIzNzE1MDcsLTExMjkwNjU0MDgsLT
 I1NTg4ODgyOSw3NzM1OTUyNDEsOTk0MDc1OTI2LC03MzkzNzkx
 NzgsMTk0NjE3MDQ5MCwtNTYyNDAwMzEyLC0yMDc2MzM4MTAwLD
 Y5NTUzMDU4MiwtNDY5MDQwMDgwLDQ2MDE0NjgzLC0yMDQyMDYx
