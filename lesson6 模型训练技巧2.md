@@ -1,4 +1,6 @@
 # 参数更新
+Loss function has high condition number: ratio of largest to smallest singular value of the Hessian matrix is large
+这是sgd就有问题
 1. SGD
 ![enter image description here](https://lh3.googleusercontent.com/T3s80zaaw2El9QaKH_NO2Uw0OWnRQ0GyVzp3NV-k02qUllNdF7jwrj7YwEHxXlyUBhAvvcSggL9b)
 2. Momentum Update
@@ -73,10 +75,10 @@ $\beta_1=0.9$,$\beta_2=0.995$是一组鲁棒性不错的参数
 
 # Gradient Checking
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2MjQwMDMxMiwtMjA3NjMzODEwMCw2OT
-U1MzA1ODIsLTQ2OTA0MDA4MCw0NjAxNDY4MywtMjA0MjA2MTg0
-LDM0NzQzMjkwMywtMTczMzUwNTc5NiwtMTE3MDI5MjM2NSwyMj
-c0NTA0MzksLTExMjUzOTMyMjEsNjU4MDIxMzY0LDY2MTEwNTE1
-NCwtMjA5OTEwOTA4MCwtNzM5OTk2ODAzLDY1NTExOTQxMywtMT
-QzMTkxMzQ4NywxNjk2OTcxNTM4XX0=
+eyJoaXN0b3J5IjpbNTA4Mjc4MTY2LC01NjI0MDAzMTIsLTIwNz
+YzMzgxMDAsNjk1NTMwNTgyLC00NjkwNDAwODAsNDYwMTQ2ODMs
+LTIwNDIwNjE4NCwzNDc0MzI5MDMsLTE3MzM1MDU3OTYsLTExNz
+AyOTIzNjUsMjI3NDUwNDM5LC0xMTI1MzkzMjIxLDY1ODAyMTM2
+NCw2NjExMDUxNTQsLTIwOTkxMDkwODAsLTczOTk5NjgwMyw2NT
+UxMTk0MTMsLTE0MzE5MTM0ODcsMTY5Njk3MTUzOF19
 -->
