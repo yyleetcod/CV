@@ -70,6 +70,7 @@ N = (Tens or Hundreds of) Millions
 2. 是很多小模型集成的大模型。失活的神经元在反向传播的过程中梯度为0，它之前与它相连的权重都不会被更新。这就相当于在一次中随机选取了一个子模型的权重拉进行更新。每个随意失活后的模型都是一个子模型，都只会被一个数据训练（失活是随机的，刚好这个数据遇到了这个失活的模式）。多次循环之后我们会用相同的数据来训练有着共同参数的不同模型
 ![enter image description here](https://lh3.googleusercontent.com/vdAQz4tet3npSRW0IW4f4ebEiKZPd5-0xVUm4Sjauxji-i1JsuYqBtb6U-ZPTVP9kOi0-BYp-9iq)
 测试时：
+![enter image description here](https://lh3.googleusercontent.com/ZEnlqFWeWGlm-GuvnCEsKrn1MwSh59fIWbrZHTfcQM5rftpmy_mgRgR30iDeRYXbi8pJs19ifMEc)
 ![enter image description here](https://lh3.googleusercontent.com/is8Qe3ysCiRQtX1hlH6qlj4iCIFws-v7LS_NRk_hnRQtoxMJZ1ezk-naKSvbpTSqwiVEopZyFXOF)
 上述这种方法太过耗时
 ![enter image description here](https://lh3.googleusercontent.com/dwZZ7xLqsCa_-Rz0ghVrVTq3RA7d0aucsr_PDBr4YR1FNXfHcfIV8jRBgsOiuGvRWSFOqiVfBipj)
@@ -83,11 +84,11 @@ N = (Tens or Hundreds of) Millions
 
 # Gradient Checking
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjkwNjU0MDgsLTI1NTg4ODgyOSw3Nz
-M1OTUyNDEsOTk0MDc1OTI2LC03MzkzNzkxNzgsMTk0NjE3MDQ5
-MCwtNTYyNDAwMzEyLC0yMDc2MzM4MTAwLDY5NTUzMDU4MiwtND
-Y5MDQwMDgwLDQ2MDE0NjgzLC0yMDQyMDYxODQsMzQ3NDMyOTAz
-LC0xNzMzNTA1Nzk2LC0xMTcwMjkyMzY1LDIyNzQ1MDQzOSwtMT
-EyNTM5MzIyMSw2NTgwMjEzNjQsNjYxMTA1MTU0LC0yMDk5MTA5
-MDgwXX0=
+eyJoaXN0b3J5IjpbNzA2NzIxODQ4LC0xMTI5MDY1NDA4LC0yNT
+U4ODg4MjksNzczNTk1MjQxLDk5NDA3NTkyNiwtNzM5Mzc5MTc4
+LDE5NDYxNzA0OTAsLTU2MjQwMDMxMiwtMjA3NjMzODEwMCw2OT
+U1MzA1ODIsLTQ2OTA0MDA4MCw0NjAxNDY4MywtMjA0MjA2MTg0
+LDM0NzQzMjkwMywtMTczMzUwNTc5NiwtMTE3MDI5MjM2NSwyMj
+c0NTA0MzksLTExMjUzOTMyMjEsNjU4MDIxMzY0LDY2MTEwNTE1
+NF19
 -->
