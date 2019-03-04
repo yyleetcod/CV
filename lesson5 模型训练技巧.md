@@ -41,8 +41,9 @@
 # 权重初始化
 
 1. 如果随机乘一样的值，那么所有神经元是对称的，网络无法工作。
-一般用很小的随机值进行初始化（比如从标准差为0.01的零均值高斯随机变量中产生）。这种方式在层数较少的网络里工作不错，但是层数多的时候，可能导致每层的输出数据分布不同的问题。层数多了之后，标准差越来越小，最终为0，这是因为W是小量，对层之后导致输出趋近0。
-如果输出是小量，那么该处的梯度也是小量（~WX，梯度消失），这样导致权重几乎不变。一层层反向传播就更小了，梯度消失
+一般用很小的随机值进行初始化（比如从标准差为0.01的零均值高斯随机变量中产生）。这种方式在层数较少的网络里工作不错，但是层数多的时候，可能导致每层的输出数据分布不同的问题。层数多了之后，标准差越来越小，最终为0，这是因为W是小量，多层之后导致输出趋近0。
+如果输出是小量，反向传播时，该处的梯度也是小量（~WX，梯度消失），这样导致权重几乎不变。一层层反向传播就更小了，梯度消失
+**输出为0，权重不更新**
 如果使用标准差为1的零均值高斯随机变量产生权重，可能导致饱和。
 激活函数为tanh时，一种有效的初始化方式：权重标准差~1/sqrt(num_in)，这样有助于每层的输出标准差为1。
 但是上述方式在ReLu中不奏效，因为ReLu让方差减半了（把<0的一办置为0）。因此权重标准差~1/sqrt(num_in/2)。没有这个2，输出分布就会以指数级别坍缩
@@ -69,8 +70,8 @@ BN层会延长模型的训练时间，最大30%
 
 ![enter image description here](https://lh3.googleusercontent.com/ruqXTdCdpZb76MmSh6yssI3AXOGkWrrlFVPLaf7HzIWRUXCaVRg5R-O1EIiPnFMChK3TTaQiOTm-)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5Njc3NTYyNiwxMjc1MTk4OTk4LC0xNj
-k1Mzg1Mjc0LC0xNDc1NjAwODQ2LDIwNjc2Nzc3ODQsMjE1MzUy
-NzI2LC0xNzIxNjQxOTcxLC0xODEyNzU0MDYsMTg3MjM0MTEyNC
-wxMDYwNTIwOTcxLDIwMDM4OTMyNzRdfQ==
+eyJoaXN0b3J5IjpbLTQ4MTQ5ODgwNSwxMjk2Nzc1NjI2LDEyNz
+UxOTg5OTgsLTE2OTUzODUyNzQsLTE0NzU2MDA4NDYsMjA2NzY3
+Nzc4NCwyMTUzNTI3MjYsLTE3MjE2NDE5NzEsLTE4MTI3NTQwNi
+wxODcyMzQxMTI0LDEwNjA1MjA5NzEsMjAwMzg5MzI3NF19
 -->
