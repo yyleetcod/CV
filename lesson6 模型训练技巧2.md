@@ -58,7 +58,7 @@ N = (Tens or Hundreds of) Millions
 # 集成模型
 ![enter image description here](https://lh3.googleusercontent.com/kZAuhvyNiNmlHz2gQp8Lf5U3RLMDfSdRRYPfb_X-gDgEmO1EnMz6F7ku8IvLGmzqWN55QuwN9qpO)
 ![enter image description here](https://lh3.googleusercontent.com/_1e_G6EWnIzOy8TYSMfvzuYTTTeVJcodtM_x8Fpl3-GXvqyX03z3S_n3eALB93i7sW1BuvwBLjVB)
-
+![enter image description here](https://lh3.googleusercontent.com/s-SgtKtZePAsw6y1KkzhE2XOTJ_mvkaE_7teDiezCbrgb6bw89vpXwBo5vNS8xND4UYnQwccth1J)
 # Dropout
 ![enter image description here](https://lh3.googleusercontent.com/epgG28uUD40Hm1VAASJbxW1B2fqp5cr8LeiJh5JppIvFP7kacME-R32HF2wsoGqHU_WXsjwWsTno)
 ![enter image description here](https://lh3.googleusercontent.com/ryQbkcyHJ42fBRt0l5KyPzvchslWmIG3L51DaqGshUcd4sQ6SwXPfbmnhNMAuz5p0-QLuL80fNBe)
@@ -83,11 +83,11 @@ N = (Tens or Hundreds of) Millions
 
 # Gradient Checking
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzczNTk1MjQxLDk5NDA3NTkyNiwtNzM5Mz
-c5MTc4LDE5NDYxNzA0OTAsLTU2MjQwMDMxMiwtMjA3NjMzODEw
-MCw2OTU1MzA1ODIsLTQ2OTA0MDA4MCw0NjAxNDY4MywtMjA0Mj
-A2MTg0LDM0NzQzMjkwMywtMTczMzUwNTc5NiwtMTE3MDI5MjM2
-NSwyMjc0NTA0MzksLTExMjUzOTMyMjEsNjU4MDIxMzY0LDY2MT
-EwNTE1NCwtMjA5OTEwOTA4MCwtNzM5OTk2ODAzLDY1NTExOTQx
-M119
+eyJoaXN0b3J5IjpbLTI1NTg4ODgyOSw3NzM1OTUyNDEsOTk0MD
+c1OTI2LC03MzkzNzkxNzgsMTk0NjE3MDQ5MCwtNTYyNDAwMzEy
+LC0yMDc2MzM4MTAwLDY5NTUzMDU4MiwtNDY5MDQwMDgwLDQ2MD
+E0NjgzLC0yMDQyMDYxODQsMzQ3NDMyOTAzLC0xNzMzNTA1Nzk2
+LC0xMTcwMjkyMzY1LDIyNzQ1MDQzOSwtMTEyNTM5MzIyMSw2NT
+gwMjEzNjQsNjYxMTA1MTU0LC0yMDk5MTA5MDgwLC03Mzk5OTY4
+MDNdfQ==
 -->
