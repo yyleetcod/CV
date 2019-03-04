@@ -34,6 +34,7 @@ rmsprop和momentum的结合：
 $\beta_1=0.9$,$\beta_2=0.995$是一组鲁棒性不错的参数
 ![enter image description here](https://lh3.googleusercontent.com/SXnOh0LlS3IhSikyCpN494IobOgKhryGka9H__-QiQ5XnVcbZ18Wlao1pvyVEUzOJjvYA71W8rfG)
 引入偏置是因为m、v一开始被设置成0，这样可以让他们更快地warm up
+Adam with beta1 = 0.9,  beta2 = 0.999, and learning_rate = 1e-3 or 5e-4 is a great starting point for many models!
 
 # 学习率
 一开始采用大学习率，后来采用小学习率
@@ -76,10 +77,11 @@ $\beta_1=0.9$,$\beta_2=0.995$是一组鲁棒性不错的参数
 
 # Gradient Checking
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0NjE3MDQ5MCwtNTYyNDAwMzEyLC0yMD
-c2MzM4MTAwLDY5NTUzMDU4MiwtNDY5MDQwMDgwLDQ2MDE0Njgz
-LC0yMDQyMDYxODQsMzQ3NDMyOTAzLC0xNzMzNTA1Nzk2LC0xMT
-cwMjkyMzY1LDIyNzQ1MDQzOSwtMTEyNTM5MzIyMSw2NTgwMjEz
-NjQsNjYxMTA1MTU0LC0yMDk5MTA5MDgwLC03Mzk5OTY4MDMsNj
-U1MTE5NDEzLC0xNDMxOTEzNDg3LDE2OTY5NzE1MzhdfQ==
+eyJoaXN0b3J5IjpbLTczOTM3OTE3OCwxOTQ2MTcwNDkwLC01Nj
+I0MDAzMTIsLTIwNzYzMzgxMDAsNjk1NTMwNTgyLC00NjkwNDAw
+ODAsNDYwMTQ2ODMsLTIwNDIwNjE4NCwzNDc0MzI5MDMsLTE3Mz
+M1MDU3OTYsLTExNzAyOTIzNjUsMjI3NDUwNDM5LC0xMTI1Mzkz
+MjIxLDY1ODAyMTM2NCw2NjExMDUxNTQsLTIwOTkxMDkwODAsLT
+czOTk5NjgwMyw2NTUxMTk0MTMsLTE0MzE5MTM0ODcsMTY5Njk3
+MTUzOF19
 -->
