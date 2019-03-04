@@ -60,6 +60,8 @@ BN层会延长模型的训练时间，最大30%
 **loss not going down**:learning rate too low
 **loss exploding**:learning rate too high
 
+多做几次超参数选择，以免落入局部最小值
+
 学习速率和正则化参数要在对数空间中取样，因为这两个参数在反向传播的时候是相乘的。如果像1、2、3、...、n这样取样，里面很多都是处于效果不好的区域
 1. 在一定区域内随机取超参数
 2. 在一定区域内网格化取超参数
@@ -73,9 +75,9 @@ BN层会延长模型的训练时间，最大30%
 
 ![enter image description here](https://lh3.googleusercontent.com/ruqXTdCdpZb76MmSh6yssI3AXOGkWrrlFVPLaf7HzIWRUXCaVRg5R-O1EIiPnFMChK3TTaQiOTm-)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzkxMzUyMzksMTk2NDMwMTkzNCwtMT
-k1ODAwNzYwNSwxMjk2Nzc1NjI2LDEyNzUxOTg5OTgsLTE2OTUz
-ODUyNzQsLTE0NzU2MDA4NDYsMjA2NzY3Nzc4NCwyMTUzNTI3Mj
-YsLTE3MjE2NDE5NzEsLTE4MTI3NTQwNiwxODcyMzQxMTI0LDEw
-NjA1MjA5NzEsMjAwMzg5MzI3NF19
+eyJoaXN0b3J5IjpbNTMxNjAyODgyLC0xMTc5MTM1MjM5LDE5Nj
+QzMDE5MzQsLTE5NTgwMDc2MDUsMTI5Njc3NTYyNiwxMjc1MTk4
+OTk4LC0xNjk1Mzg1Mjc0LC0xNDc1NjAwODQ2LDIwNjc2Nzc3OD
+QsMjE1MzUyNzI2LC0xNzIxNjQxOTcxLC0xODEyNzU0MDYsMTg3
+MjM0MTEyNCwxMDYwNTIwOTcxLDIwMDM4OTMyNzRdfQ==
 -->
