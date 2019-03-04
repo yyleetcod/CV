@@ -65,6 +65,7 @@ N = (Tens or Hundreds of) Millions
 前向传播和反向传播要同时进行dropout（或都不进行）
 一般都保留50%，想要更强的正则化，就多失活一些神经元
 有效防止过拟合：每次只是用一半的节点，网络中设计的变量数减少，模型表达能力下降，减少过拟合的几率。
+Forces the network to have a redundant representation; Prevents co-adaptation of features
 可以这么理解dropout：
 1. 由于过程中每个特征都可能被随机的失活，所以dropout会让模型更倾向于去依赖更多的特征，来提高自己的准确率
 2. 是很多小模型集成的大模型。失活的神经元在反向传播的过程中梯度为0，它之前与它相连的权重都不会被更新。这就相当于在一次中随机选取了一个子模型的权重拉进行更新。每个随意失活后的模型都是一个子模型，都只会被一个数据训练（失活是随机的，刚好这个数据遇到了这个失活的模式）。多次循环之后我们会用相同的数据来训练有着共同参数的不同模型
@@ -83,11 +84,11 @@ N = (Tens or Hundreds of) Millions
 
 # Gradient Checking
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1NTg4ODgyOSw3NzM1OTUyNDEsOTk0MD
-c1OTI2LC03MzkzNzkxNzgsMTk0NjE3MDQ5MCwtNTYyNDAwMzEy
-LC0yMDc2MzM4MTAwLDY5NTUzMDU4MiwtNDY5MDQwMDgwLDQ2MD
-E0NjgzLC0yMDQyMDYxODQsMzQ3NDMyOTAzLC0xNzMzNTA1Nzk2
-LC0xMTcwMjkyMzY1LDIyNzQ1MDQzOSwtMTEyNTM5MzIyMSw2NT
-gwMjEzNjQsNjYxMTA1MTU0LC0yMDk5MTA5MDgwLC03Mzk5OTY4
-MDNdfQ==
+eyJoaXN0b3J5IjpbLTU0Mzg3NTQ2NiwtMjU1ODg4ODI5LDc3Mz
+U5NTI0MSw5OTQwNzU5MjYsLTczOTM3OTE3OCwxOTQ2MTcwNDkw
+LC01NjI0MDAzMTIsLTIwNzYzMzgxMDAsNjk1NTMwNTgyLC00Nj
+kwNDAwODAsNDYwMTQ2ODMsLTIwNDIwNjE4NCwzNDc0MzI5MDMs
+LTE3MzM1MDU3OTYsLTExNzAyOTIzNjUsMjI3NDUwNDM5LC0xMT
+I1MzkzMjIxLDY1ODAyMTM2NCw2NjExMDUxNTQsLTIwOTkxMDkw
+ODBdfQ==
 -->
