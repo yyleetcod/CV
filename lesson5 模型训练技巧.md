@@ -18,7 +18,7 @@
 - 缺点：不是关于原点对称
 
 **Exponential Linear Units**
-- 优点：不会饱和，收敛快，没有Dead ReLu，输出更接近零均值
+- 优点：不会饱和，收敛快，没有Dead ReLu，输出更接近零均值；和Leaky ReLu相比，增加了噪声鲁棒性
 - 缺点：需要指数运算，计算代价高
 
 **Maxout**
@@ -69,8 +69,8 @@ BN层会延长模型的训练时间，最大30%
 
 ![enter image description here](https://lh3.googleusercontent.com/ruqXTdCdpZb76MmSh6yssI3AXOGkWrrlFVPLaf7HzIWRUXCaVRg5R-O1EIiPnFMChK3TTaQiOTm-)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3NTE5ODk5OCwtMTY5NTM4NTI3NCwtMT
-Q3NTYwMDg0NiwyMDY3Njc3Nzg0LDIxNTM1MjcyNiwtMTcyMTY0
-MTk3MSwtMTgxMjc1NDA2LDE4NzIzNDExMjQsMTA2MDUyMDk3MS
-wyMDAzODkzMjc0XX0=
+eyJoaXN0b3J5IjpbLTcxNjE1MTc3OSwxMjc1MTk4OTk4LC0xNj
+k1Mzg1Mjc0LC0xNDc1NjAwODQ2LDIwNjc2Nzc3ODQsMjE1MzUy
+NzI2LC0xNzIxNjQxOTcxLC0xODEyNzU0MDYsMTg3MjM0MTEyNC
+wxMDYwNTIwOTcxLDIwMDM4OTMyNzRdfQ==
 -->
