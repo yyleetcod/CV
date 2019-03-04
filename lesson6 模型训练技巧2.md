@@ -1,6 +1,6 @@
 # 参数更新
 Loss function has high condition number: ratio of largest to smallest singular value of the Hessian matrix is large
-这是sgd就有问题
+这时候sgd就有问题
 1. SGD
 ![enter image description here](https://lh3.googleusercontent.com/T3s80zaaw2El9QaKH_NO2Uw0OWnRQ0GyVzp3NV-k02qUllNdF7jwrj7YwEHxXlyUBhAvvcSggL9b)
 2. Momentum Update
@@ -9,6 +9,7 @@ $w+=v$
 这个更新过程可以认为梯度是加速度，$m_u$是摩擦力带来的衰减，取0~1.
 这个更新会使得陡峭方向会阻尼衰减，平缓方向不断前进，这样就不会振荡收敛。
 ![enter image description here](https://lh3.googleusercontent.com/rTxH6dzSQavHOqCoptHfzN9qJpE3NkClp5oiWZDcPuJI8G5T3-5BXW_z08byXu7fmrhzRC-lwSCc)
+而且sgd无法逃脱鞍点和局部最小值
 3. Nesterov Momentum Update（Nesterov Accelerated Update）
 ![enter image description here](https://lh3.googleusercontent.com/aTYeUwi5asHFkrI2qns-yyNGnJCOcD6cXDBI3UqwbnPK4mfnSn7CPTiLNR08coa6PqYpNf6I8X7V)
 算梯度的时候直接到下一个位置算
@@ -75,10 +76,10 @@ $\beta_1=0.9$,$\beta_2=0.995$是一组鲁棒性不错的参数
 
 # Gradient Checking
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA4Mjc4MTY2LC01NjI0MDAzMTIsLTIwNz
-YzMzgxMDAsNjk1NTMwNTgyLC00NjkwNDAwODAsNDYwMTQ2ODMs
-LTIwNDIwNjE4NCwzNDc0MzI5MDMsLTE3MzM1MDU3OTYsLTExNz
-AyOTIzNjUsMjI3NDUwNDM5LC0xMTI1MzkzMjIxLDY1ODAyMTM2
-NCw2NjExMDUxNTQsLTIwOTkxMDkwODAsLTczOTk5NjgwMyw2NT
-UxMTk0MTMsLTE0MzE5MTM0ODcsMTY5Njk3MTUzOF19
+eyJoaXN0b3J5IjpbMTk0NjE3MDQ5MCwtNTYyNDAwMzEyLC0yMD
+c2MzM4MTAwLDY5NTUzMDU4MiwtNDY5MDQwMDgwLDQ2MDE0Njgz
+LC0yMDQyMDYxODQsMzQ3NDMyOTAzLC0xNzMzNTA1Nzk2LC0xMT
+cwMjkyMzY1LDIyNzQ1MDQzOSwtMTEyNTM5MzIyMSw2NTgwMjEz
+NjQsNjYxMTA1MTU0LC0yMDk5MTA5MDgwLC03Mzk5OTY4MDMsNj
+U1MTE5NDEzLC0xNDMxOTEzNDg3LDE2OTY5NzE1MzhdfQ==
 -->
