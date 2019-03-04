@@ -47,7 +47,7 @@ Adam with beta1 = 0.9,  beta2 = 0.999, and learning_rate = 1e-3 or 5e-4 is a gre
 ![enter image description here](https://lh3.googleusercontent.com/TBM6EwMfNtPmG3eYtuDRgdCN-Lhn-vI1rEv-ukYtDP1e3HqCT2CdUIUcj1hGCdcXfhm31R5kIkJ5)
 好处是收敛更快，超参数更少，不用学习率
 坏处是二阶导矩阵太大了，计算不出来
-Hessian has O(N ^ 2) elements 
+Hessian has O(N^2) elements 
 Inverting takes O(N^3)  
 N = (Tens or Hundreds of) Millions
 ![enter image description here](https://lh3.googleusercontent.com/lI33lSsY7vnwUKsThyXnOv6_82sKLeOzHMMkQrzNdRQbTi6mYfQaFhbXCOnQRVF_XYjwKfsFTJZa)
@@ -82,11 +82,11 @@ N = (Tens or Hundreds of) Millions
 
 # Gradient Checking
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzY1ODg2NTQsLTczOTM3OTE3OCwxOT
-Q2MTcwNDkwLC01NjI0MDAzMTIsLTIwNzYzMzgxMDAsNjk1NTMw
-NTgyLC00NjkwNDAwODAsNDYwMTQ2ODMsLTIwNDIwNjE4NCwzND
-c0MzI5MDMsLTE3MzM1MDU3OTYsLTExNzAyOTIzNjUsMjI3NDUw
-NDM5LC0xMTI1MzkzMjIxLDY1ODAyMTM2NCw2NjExMDUxNTQsLT
-IwOTkxMDkwODAsLTczOTk5NjgwMyw2NTUxMTk0MTMsLTE0MzE5
-MTM0ODddfQ==
+eyJoaXN0b3J5IjpbOTk0MDc1OTI2LC03MzkzNzkxNzgsMTk0Nj
+E3MDQ5MCwtNTYyNDAwMzEyLC0yMDc2MzM4MTAwLDY5NTUzMDU4
+MiwtNDY5MDQwMDgwLDQ2MDE0NjgzLC0yMDQyMDYxODQsMzQ3ND
+MyOTAzLC0xNzMzNTA1Nzk2LC0xMTcwMjkyMzY1LDIyNzQ1MDQz
+OSwtMTEyNTM5MzIyMSw2NTgwMjEzNjQsNjYxMTA1MTU0LC0yMD
+k5MTA5MDgwLC03Mzk5OTY4MDMsNjU1MTE5NDEzLC0xNDMxOTEz
+NDg3XX0=
 -->
