@@ -52,7 +52,7 @@
 ![enter image description here](https://lh3.googleusercontent.com/rmswx2YOnu-Gfcgl_GY0VdN_v0tWX16Yaj7h3VIhZn9R-eOGeAM9gOhN2RNd6ggnc1XaQik94_dR)
 batch normalization好处：
 ![enter image description here](https://lh3.googleusercontent.com/nJ0f4digtFYPbUnKOPP3LVt5wBVYidRofzIty8rDNs4jpthgmxfpO56OBLA4Oxac8MUrVDnxkk4m)
-BN层吧不同样本联系在了一起，得到了当前batch的样本表示空间，有不错的正则化效果
+BN层把不同样本联系在了一起，得到了当前batch的样本表示空间，有不错的正则化效果
 ![enter image description here](https://lh3.googleusercontent.com/R8Kb-BIB66RE9mWGFzX10b3aIBJhmG2BPt1HDpJR1AhQlfg21weq946LkMkWEQM7TyIh_vtODHpW)
 BN层会延长模型的训练时间，最大30%
 
@@ -70,9 +70,9 @@ BN层会延长模型的训练时间，最大30%
 
 ![enter image description here](https://lh3.googleusercontent.com/ruqXTdCdpZb76MmSh6yssI3AXOGkWrrlFVPLaf7HzIWRUXCaVRg5R-O1EIiPnFMChK3TTaQiOTm-)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTgwMDc2MDUsMTI5Njc3NTYyNiwxMj
-c1MTk4OTk4LC0xNjk1Mzg1Mjc0LC0xNDc1NjAwODQ2LDIwNjc2
-Nzc3ODQsMjE1MzUyNzI2LC0xNzIxNjQxOTcxLC0xODEyNzU0MD
-YsMTg3MjM0MTEyNCwxMDYwNTIwOTcxLDIwMDM4OTMyNzRdfQ==
-
+eyJoaXN0b3J5IjpbMTk2NDMwMTkzNCwtMTk1ODAwNzYwNSwxMj
+k2Nzc1NjI2LDEyNzUxOTg5OTgsLTE2OTUzODUyNzQsLTE0NzU2
+MDA4NDYsMjA2NzY3Nzc4NCwyMTUzNTI3MjYsLTE3MjE2NDE5Nz
+EsLTE4MTI3NTQwNiwxODcyMzQxMTI0LDEwNjA1MjA5NzEsMjAw
+Mzg5MzI3NF19
 -->
