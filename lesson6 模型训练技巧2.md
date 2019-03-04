@@ -45,8 +45,11 @@ Adam with beta1 = 0.9,  beta2 = 0.999, and learning_rate = 1e-3 or 5e-4 is a gre
 ![enter image description here](https://lh3.googleusercontent.com/fJUnC7eXJ4JOVQurGFD-NYx1aXIAVKd2NSrOKUDFxTW6PXHH9Vk9S1I2WutxYuC1Wmevi4uAV-TP)
 比如牛顿法。
 ![enter image description here](https://lh3.googleusercontent.com/TBM6EwMfNtPmG3eYtuDRgdCN-Lhn-vI1rEv-ukYtDP1e3HqCT2CdUIUcj1hGCdcXfhm31R5kIkJ5)
-好处是收敛更快，超参数更少
+好处是收敛更快，超参数更少，不用学习率
 坏处是二阶导矩阵太大了，计算不出来
+Hessian has O(N ^ 2) elements 
+Inverting takes O(N^3)  
+N = (Tens or Hundreds of) Millions
 ![enter image description here](https://lh3.googleusercontent.com/lI33lSsY7vnwUKsThyXnOv6_82sKLeOzHMMkQrzNdRQbTi6mYfQaFhbXCOnQRVF_XYjwKfsFTJZa)
 ![enter image description here](https://lh3.googleusercontent.com/lrpy-f84tDhruseIoIQE5iyXWdw9uQmc6e4zDrXR6d9xS4ZlkHngCCzohhwEzCWUyjBdPau0CQBw)
 ![enter image description here](https://lh3.googleusercontent.com/jaWnZjaOfGf4ZKB1AiL656uwFOnAC7OPdfK7MQ4NsV0caIEnhzW7jKJNddVxVInTriqX0GQI0YZz)
@@ -79,11 +82,11 @@ Adam with beta1 = 0.9,  beta2 = 0.999, and learning_rate = 1e-3 or 5e-4 is a gre
 
 # Gradient Checking
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5NTgwNTEzMywtNzM5Mzc5MTc4LDE5ND
-YxNzA0OTAsLTU2MjQwMDMxMiwtMjA3NjMzODEwMCw2OTU1MzA1
-ODIsLTQ2OTA0MDA4MCw0NjAxNDY4MywtMjA0MjA2MTg0LDM0Nz
-QzMjkwMywtMTczMzUwNTc5NiwtMTE3MDI5MjM2NSwyMjc0NTA0
-MzksLTExMjUzOTMyMjEsNjU4MDIxMzY0LDY2MTEwNTE1NCwtMj
-A5OTEwOTA4MCwtNzM5OTk2ODAzLDY1NTExOTQxMywtMTQzMTkx
-MzQ4N119
+eyJoaXN0b3J5IjpbLTE0NzY1ODg2NTQsLTczOTM3OTE3OCwxOT
+Q2MTcwNDkwLC01NjI0MDAzMTIsLTIwNzYzMzgxMDAsNjk1NTMw
+NTgyLC00NjkwNDAwODAsNDYwMTQ2ODMsLTIwNDIwNjE4NCwzND
+c0MzI5MDMsLTE3MzM1MDU3OTYsLTExNzAyOTIzNjUsMjI3NDUw
+NDM5LC0xMTI1MzkzMjIxLDY1ODAyMTM2NCw2NjExMDUxNTQsLT
+IwOTkxMDkwODAsLTczOTk5NjgwMyw2NTUxMTk0MTMsLTE0MzE5
+MTM0ODddfQ==
 -->
