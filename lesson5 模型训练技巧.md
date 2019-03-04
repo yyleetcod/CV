@@ -47,7 +47,7 @@
 如果使用标准差为1的零均值高斯随机变量产生权重，可能导致饱和，反向传播梯度为0。
 激活函数为tanh时，一种有效的初始化方式：权重标准差~1/sqrt(num_in)，这样有助于每层的输出标准差为1。
 但是上述方式在ReLu中不奏效，因为ReLu让方差减半了（把<0的一办置为0）。因此权重标准差~1/sqrt(num_in/2)。没有这个2，输出分布就会以指数级别坍缩
-
+![enter image description here](https://lh3.googleusercontent.com/j4Ngs2Lv2ImtbPviBbPtCUk0pah-ZGMSnDmyJQduHdRhEACnWJfWb2LzO9-6mCkNRh3PQaTgBMhF)
 
 2. Batch Normalization：对每个维度的特征单独做归一化，来获得单位高斯分布的变量。该层加在全连接层（或者卷积层）和非线性激活层（如tanh）之间。但是问题时tanh的输入一定要是单位高斯分布的吗？可以这么解决（加入偏移作为参数，如果不需要batch normalization，参数最后会学习让这个层作用消失）：
 ![enter image description here](https://lh3.googleusercontent.com/rmswx2YOnu-Gfcgl_GY0VdN_v0tWX16Yaj7h3VIhZn9R-eOGeAM9gOhN2RNd6ggnc1XaQik94_dR)
@@ -76,7 +76,7 @@ BN层会延长模型的训练时间，最大30%
 
 ![enter image description here](https://lh3.googleusercontent.com/ruqXTdCdpZb76MmSh6yssI3AXOGkWrrlFVPLaf7HzIWRUXCaVRg5R-O1EIiPnFMChK3TTaQiOTm-)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwOTA2MzIxNiw1MzE2MDI4ODIsLTExNz
+eyJoaXN0b3J5IjpbMjA1MjM0NjkxOSw1MzE2MDI4ODIsLTExNz
 kxMzUyMzksMTk2NDMwMTkzNCwtMTk1ODAwNzYwNSwxMjk2Nzc1
 NjI2LDEyNzUxOTg5OTgsLTE2OTUzODUyNzQsLTE0NzU2MDA4ND
 YsMjA2NzY3Nzc4NCwyMTUzNTI3MjYsLTE3MjE2NDE5NzEsLTE4
