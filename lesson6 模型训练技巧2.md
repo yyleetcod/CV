@@ -41,6 +41,8 @@ Adam with beta1 = 0.9,  beta2 = 0.999, and learning_rate = 1e-3 or 5e-4 is a gre
 ![enter image description here](https://lh3.googleusercontent.com/Z5koJlN6VPTZcOHDwDApT-MGigdDBwJdb1Mdl0qz8qTZQG2hRJoqXUXS-xAUAT462BNddBk2CnW_)
 
 # 二阶优化方法
+![enter image description here](https://lh3.googleusercontent.com/ZHpm8A-PeIRKSWM089S1xwiG2p2eHnciiVmXpN98SwC65U-cSdSioDfpioVQHuJa1xWQE5psKzHd)
+![enter image description here](https://lh3.googleusercontent.com/fJUnC7eXJ4JOVQurGFD-NYx1aXIAVKd2NSrOKUDFxTW6PXHH9Vk9S1I2WutxYuC1Wmevi4uAV-TP)
 比如牛顿法。
 ![enter image description here](https://lh3.googleusercontent.com/TBM6EwMfNtPmG3eYtuDRgdCN-Lhn-vI1rEv-ukYtDP1e3HqCT2CdUIUcj1hGCdcXfhm31R5kIkJ5)
 好处是收敛更快，超参数更少
@@ -77,11 +79,11 @@ Adam with beta1 = 0.9,  beta2 = 0.999, and learning_rate = 1e-3 or 5e-4 is a gre
 
 # Gradient Checking
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczOTM3OTE3OCwxOTQ2MTcwNDkwLC01Nj
-I0MDAzMTIsLTIwNzYzMzgxMDAsNjk1NTMwNTgyLC00NjkwNDAw
-ODAsNDYwMTQ2ODMsLTIwNDIwNjE4NCwzNDc0MzI5MDMsLTE3Mz
-M1MDU3OTYsLTExNzAyOTIzNjUsMjI3NDUwNDM5LC0xMTI1Mzkz
-MjIxLDY1ODAyMTM2NCw2NjExMDUxNTQsLTIwOTkxMDkwODAsLT
-czOTk5NjgwMyw2NTUxMTk0MTMsLTE0MzE5MTM0ODcsMTY5Njk3
-MTUzOF19
+eyJoaXN0b3J5IjpbMTQ5NTgwNTEzMywtNzM5Mzc5MTc4LDE5ND
+YxNzA0OTAsLTU2MjQwMDMxMiwtMjA3NjMzODEwMCw2OTU1MzA1
+ODIsLTQ2OTA0MDA4MCw0NjAxNDY4MywtMjA0MjA2MTg0LDM0Nz
+QzMjkwMywtMTczMzUwNTc5NiwtMTE3MDI5MjM2NSwyMjc0NTA0
+MzksLTExMjUzOTMyMjEsNjU4MDIxMzY0LDY2MTEwNTE1NCwtMj
+A5OTEwOTA4MCwtNzM5OTk2ODAzLDY1NTExOTQxMywtMTQzMTkx
+MzQ4N119
 -->
