@@ -53,7 +53,7 @@ N = (Tens or Hundreds of) Millions
 ![enter image description here](https://lh3.googleusercontent.com/lI33lSsY7vnwUKsThyXnOv6_82sKLeOzHMMkQrzNdRQbTi6mYfQaFhbXCOnQRVF_XYjwKfsFTJZa)
 ![enter image description here](https://lh3.googleusercontent.com/lrpy-f84tDhruseIoIQE5iyXWdw9uQmc6e4zDrXR6d9xS4ZlkHngCCzohhwEzCWUyjBdPau0CQBw)
 ![enter image description here](https://lh3.googleusercontent.com/jaWnZjaOfGf4ZKB1AiL656uwFOnAC7OPdfK7MQ4NsV0caIEnhzW7jKJNddVxVInTriqX0GQI0YZz)
-
+![enter image description here](https://lh3.googleusercontent.com/dGsxwaBkHSub_Gl8T9rNeTy4nxz70QA1_1CreG7-2XbYkFBEzm-pYEF7y3U9ymMzI0O64oQpXnUd)
 
 # 集成模型
 ![enter image description here](https://lh3.googleusercontent.com/kZAuhvyNiNmlHz2gQp8Lf5U3RLMDfSdRRYPfb_X-gDgEmO1EnMz6F7ku8IvLGmzqWN55QuwN9qpO)
@@ -83,7 +83,7 @@ N = (Tens or Hundreds of) Millions
 
 # Gradient Checking
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyNjYxMzM2LDk5NDA3NTkyNiwtNzM5Mz
+eyJoaXN0b3J5IjpbNzczNTk1MjQxLDk5NDA3NTkyNiwtNzM5Mz
 c5MTc4LDE5NDYxNzA0OTAsLTU2MjQwMDMxMiwtMjA3NjMzODEw
 MCw2OTU1MzA1ODIsLTQ2OTA0MDA4MCw0NjAxNDY4MywtMjA0Mj
 A2MTg0LDM0NzQzMjkwMywtMTczMzUwNTc5NiwtMTE3MDI5MjM2
