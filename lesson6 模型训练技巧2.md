@@ -85,13 +85,16 @@ N = (Tens or Hundreds of) Millions
 # Regularization
 ![enter image description here](https://lh3.googleusercontent.com/q1XI_oQEwtlsGFs4BIFuKqS3WVPTw0q1DR0k5Ro5m1_TVQyfes1qnj4rY2qIZQ9Ohp1BmevJr-bV)
 
+# Data Augmentation
+![enter image description here](https://lh3.googleusercontent.com/8c6mi53KzdXX8_FI2scK8NVrAlX__5GT7gvo4do3L7CkhEAHSYLWz8GngbY4TzYrUVl4c75M2hke)
+
 # Gradient Checking
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTIzNzE1MDcsLTExMjkwNjU0MDgsLT
-I1NTg4ODgyOSw3NzM1OTUyNDEsOTk0MDc1OTI2LC03MzkzNzkx
-NzgsMTk0NjE3MDQ5MCwtNTYyNDAwMzEyLC0yMDc2MzM4MTAwLD
-Y5NTUzMDU4MiwtNDY5MDQwMDgwLDQ2MDE0NjgzLC0yMDQyMDYx
-ODQsMzQ3NDMyOTAzLC0xNzMzNTA1Nzk2LC0xMTcwMjkyMzY1LD
-IyNzQ1MDQzOSwtMTEyNTM5MzIyMSw2NTgwMjEzNjQsNjYxMTA1
-MTU0XX0=
+eyJoaXN0b3J5IjpbOTI3MDY2OTgsLTExMjkwNjU0MDgsLTI1NT
+g4ODgyOSw3NzM1OTUyNDEsOTk0MDc1OTI2LC03MzkzNzkxNzgs
+MTk0NjE3MDQ5MCwtNTYyNDAwMzEyLC0yMDc2MzM4MTAwLDY5NT
+UzMDU4MiwtNDY5MDQwMDgwLDQ2MDE0NjgzLC0yMDQyMDYxODQs
+MzQ3NDMyOTAzLC0xNzMzNTA1Nzk2LC0xMTcwMjkyMzY1LDIyNz
+Q1MDQzOSwtMTEyNTM5MzIyMSw2NTgwMjEzNjQsNjYxMTA1MTU0
+XX0=
 -->
