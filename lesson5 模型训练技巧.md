@@ -1,6 +1,7 @@
 # 激活函数
 
 如果没有激活函数，网络的分类能力基本上类似于线性分类器
+与神经网络中的所有层不同，输出层神经元通常不具有激活功能（或者您可以将它们视为具有线性身份激活功能）。 这是因为最后的输出层通常用于表示类别得分（例如，在分类中），它们是任意实数值，或某种实值目标（例如，在回归中）。
 **sigmoid问题：**
 1. 饱和区域梯度为0
 2. sigmoid输出恒为正。恒为正的数据作为输入数据，将会导致梯度要么都为正，要么都为负。因此w只能通向变化。如果要达到w的最优值，那么所走的路径是很曲折的锯齿形的（比如w1，w2变化方向不一致，要达到的话不能走斜线，只能分两次，竖直和水平各走一次），因此收敛速度很慢。所以我们更希望得到关于原点中心的输入数据和关于原点中心对此的输出。不过由于梯度是在一个batch中相加的，所以不同维度可以符号不同，一定程度缓解了这个问题。
@@ -76,11 +77,11 @@ BN层会延长模型的训练时间，最大30%
 
 ![enter image description here](https://lh3.googleusercontent.com/ruqXTdCdpZb76MmSh6yssI3AXOGkWrrlFVPLaf7HzIWRUXCaVRg5R-O1EIiPnFMChK3TTaQiOTm-)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjc5NDIwNDY4LDk0Njc3MDgzNSwxMjczOD
-k0NzQxLDIwNTIzNDY5MTksNTMxNjAyODgyLC0xMTc5MTM1MjM5
-LDE5NjQzMDE5MzQsLTE5NTgwMDc2MDUsMTI5Njc3NTYyNiwxMj
-c1MTk4OTk4LC0xNjk1Mzg1Mjc0LC0xNDc1NjAwODQ2LDIwNjc2
-Nzc3ODQsMjE1MzUyNzI2LC0xNzIxNjQxOTcxLC0xODEyNzU0MD
-YsMTg3MjM0MTEyNCwxMDYwNTIwOTcxLDIwMDM4OTMyNzRdfQ==
-
+eyJoaXN0b3J5IjpbLTkyODUzODQ4NywyNzk0MjA0NjgsOTQ2Nz
+cwODM1LDEyNzM4OTQ3NDEsMjA1MjM0NjkxOSw1MzE2MDI4ODIs
+LTExNzkxMzUyMzksMTk2NDMwMTkzNCwtMTk1ODAwNzYwNSwxMj
+k2Nzc1NjI2LDEyNzUxOTg5OTgsLTE2OTUzODUyNzQsLTE0NzU2
+MDA4NDYsMjA2NzY3Nzc4NCwyMTUzNTI3MjYsLTE3MjE2NDE5Nz
+EsLTE4MTI3NTQwNiwxODcyMzQxMTI0LDEwNjA1MjA5NzEsMjAw
+Mzg5MzI3NF19
 -->
