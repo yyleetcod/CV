@@ -37,7 +37,7 @@
 
 1. 零均值。有两种方式，减去每个像素均值（32x32x3），或者减去每个通道均值（3）
 2. 归一化（在cv中不常见，因为像素本身取值是0-255）
-3. PCA去除数据相关性，使得协方差矩阵为对角矩阵。再进行白化，使得协方差矩阵为单位矩阵（机器学习中常见，cv不常见，因为图像太多维，协方差矩阵太大）
+3. PCA去除数据相关性，使得协方差矩阵为对角矩阵。再进行白化，使得协方差矩阵为单位矩阵（机器学习中常见，cv不常见，因为图像太多维，协方差矩阵太大）。白化的实现过程中，请注意，我们添加1e-5（或小常数）以防止除零。 这种转换的一个弱点是它可以极大地夸大数据中的噪声，因为它将所有维度（包括主要是噪声的微小方差的无关维度）拉伸到输入中的相同大小。 实际上，这可以通过更强的平滑（即，将1e-5增加为更大的数量）来减轻。
 
 # 权重初始化
 
@@ -78,11 +78,11 @@ BN层会延长模型的训练时间，最大30%
 ![enter image description here](https://lh3.googleusercontent.com/ruqXTdCdpZb76MmSh6yssI3AXOGkWrrlFVPLaf7HzIWRUXCaVRg5R-O1EIiPnFMChK3TTaQiOTm-)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzM2NzAwMjUsLTkyODUzODQ4NywyNz
-k0MjA0NjgsOTQ2NzcwODM1LDEyNzM4OTQ3NDEsMjA1MjM0Njkx
-OSw1MzE2MDI4ODIsLTExNzkxMzUyMzksMTk2NDMwMTkzNCwtMT
-k1ODAwNzYwNSwxMjk2Nzc1NjI2LDEyNzUxOTg5OTgsLTE2OTUz
-ODUyNzQsLTE0NzU2MDA4NDYsMjA2NzY3Nzc4NCwyMTUzNTI3Mj
-YsLTE3MjE2NDE5NzEsLTE4MTI3NTQwNiwxODcyMzQxMTI0LDEw
-NjA1MjA5NzFdfQ==
+eyJoaXN0b3J5IjpbMTg2ODE3NjEyMiwtOTI4NTM4NDg3LDI3OT
+QyMDQ2OCw5NDY3NzA4MzUsMTI3Mzg5NDc0MSwyMDUyMzQ2OTE5
+LDUzMTYwMjg4MiwtMTE3OTEzNTIzOSwxOTY0MzAxOTM0LC0xOT
+U4MDA3NjA1LDEyOTY3NzU2MjYsMTI3NTE5ODk5OCwtMTY5NTM4
+NTI3NCwtMTQ3NTYwMDg0NiwyMDY3Njc3Nzg0LDIxNTM1MjcyNi
+wtMTcyMTY0MTk3MSwtMTgxMjc1NDA2LDE4NzIzNDExMjQsMTA2
+MDUyMDk3MV19
 -->
