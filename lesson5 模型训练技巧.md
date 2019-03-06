@@ -10,7 +10,7 @@
 - 输出在[-1，1]之间，解决了sigmoid输出不关于原点对称的问题，但是仍然存在数据饱和的问题
 
 **ReLu**
-- 优点：在>0的区域不会饱和，计算很快，而且收敛也比sigmoid和tanh函数快（大约快6倍）
+- 优点：在>0的区域不会饱和，计算很快，而且收敛也比sigmoid和tanh函数快（大约快6倍，可能是由于线性性质和不饱和）
 - 缺点：输出不是关于原点对称的，而且如果每个输入数据都处于非激活区域，计算得到梯度为0，权重不会被更新（Dead ReLu），神经网络不会训练。可能原因是初始化不合理或者学习率更大。Dead ReLu不可逆转。一般来说把偏置值初始化为比较小的正值，比如0.01，这会使网络更有可能输出正值，避免Dead ReLu
 
 **Leaky ReLu**
@@ -76,10 +76,10 @@ BN层会延长模型的训练时间，最大30%
 
 ![enter image description here](https://lh3.googleusercontent.com/ruqXTdCdpZb76MmSh6yssI3AXOGkWrrlFVPLaf7HzIWRUXCaVRg5R-O1EIiPnFMChK3TTaQiOTm-)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3Mzg5NDc0MSwyMDUyMzQ2OTE5LDUzMT
-YwMjg4MiwtMTE3OTEzNTIzOSwxOTY0MzAxOTM0LC0xOTU4MDA3
-NjA1LDEyOTY3NzU2MjYsMTI3NTE5ODk5OCwtMTY5NTM4NTI3NC
-wtMTQ3NTYwMDg0NiwyMDY3Njc3Nzg0LDIxNTM1MjcyNiwtMTcy
-MTY0MTk3MSwtMTgxMjc1NDA2LDE4NzIzNDExMjQsMTA2MDUyMD
-k3MSwyMDAzODkzMjc0XX0=
+eyJoaXN0b3J5IjpbMjUzMzk1MzA4LDEyNzM4OTQ3NDEsMjA1Mj
+M0NjkxOSw1MzE2MDI4ODIsLTExNzkxMzUyMzksMTk2NDMwMTkz
+NCwtMTk1ODAwNzYwNSwxMjk2Nzc1NjI2LDEyNzUxOTg5OTgsLT
+E2OTUzODUyNzQsLTE0NzU2MDA4NDYsMjA2NzY3Nzc4NCwyMTUz
+NTI3MjYsLTE3MjE2NDE5NzEsLTE4MTI3NTQwNiwxODcyMzQxMT
+I0LDEwNjA1MjA5NzEsMjAwMzg5MzI3NF19
 -->
