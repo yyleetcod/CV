@@ -94,12 +94,17 @@ N = (Tens or Hundreds of) Millions
 # Transfer Learning
 ![enter image description here](https://lh3.googleusercontent.com/Av4e4aBeCT_mfBygZ-BYQkDoMyNnykw08vJcrKE4rUlwgVj83CM1WdKKrlVX-bKO7VBEA45zcIQA)
 ![enter image description here](https://lh3.googleusercontent.com/Vb7EIkwh0Lm5HTB8wTQhGh6ESWvGtoEEfkzoDGaXUWpfmGtiPYTPu1wEW70-MMVwPZPjFbwemsvN)
+
+# 选择大网络
+如果数据不够复杂以防止过度拟合，似乎可以优先选择较小的神经网络。 然而，这是不正确的 - 还有许多其他首选方法可以防止神经网络中的过度拟合，我们将在后面讨论（例如L2正则化，丢失，输入噪声）。 在实践中，使用这些方法来控制过度拟合而不是神经元的数量总是更好。
+这背后的微妙原因是较小的网络难以使用诸如梯度下降之类的局部方法进行训练：很明显，它们的损失函数具有相对较少的局部最小值，但事实证明，这些最小值中的许多更易于收敛，并且他们很糟糕（即损失很大）。相反，较大的神经网络包含明显更多的局部最小值，但这些最小值在实际损失方面变得更好。由于神经网络是非凸的，因此很难在数学上研究这些特性，但是已经进行了一些尝试来理解这些目标函数，例如，在最近的一篇论文“多层网络的损失表面”中。在实践中，你发现如果你训练一个小网络，最后的损失可以显示出很大的差异 - 在某些情况下你会很幸运并收敛到一个好地方但在某些情况下你会被困在一个坏的极小。另一方面，如果你训练一个大型网络，你将开始找到许多不同的解决方案，但最终实现的损失的差异会小得多。换句话说，所有解决方案都同样好，并且更少依赖于随机初始化的运气。
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTY5MjA1MzEsOTgzMzkwNjY4LC0xOD
-czMzIwNjksOTI3MDY2OTgsLTExMjkwNjU0MDgsLTI1NTg4ODgy
-OSw3NzM1OTUyNDEsOTk0MDc1OTI2LC03MzkzNzkxNzgsMTk0Nj
-E3MDQ5MCwtNTYyNDAwMzEyLC0yMDc2MzM4MTAwLDY5NTUzMDU4
-MiwtNDY5MDQwMDgwLDQ2MDE0NjgzLC0yMDQyMDYxODQsMzQ3ND
-MyOTAzLC0xNzMzNTA1Nzk2LC0xMTcwMjkyMzY1LDIyNzQ1MDQz
-OV19
+eyJoaXN0b3J5IjpbNzcyNzA1Njc4LC0xMTk2OTIwNTMxLDk4Mz
+M5MDY2OCwtMTg3MzMyMDY5LDkyNzA2Njk4LC0xMTI5MDY1NDA4
+LC0yNTU4ODg4MjksNzczNTk1MjQxLDk5NDA3NTkyNiwtNzM5Mz
+c5MTc4LDE5NDYxNzA0OTAsLTU2MjQwMDMxMiwtMjA3NjMzODEw
+MCw2OTU1MzA1ODIsLTQ2OTA0MDA4MCw0NjAxNDY4MywtMjA0Mj
+A2MTg0LDM0NzQzMjkwMywtMTczMzUwNTc5NiwtMTE3MDI5MjM2
+NV19
 -->
