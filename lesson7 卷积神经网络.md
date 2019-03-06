@@ -107,9 +107,5 @@ The largest bottleneck to be aware of when constructing ConvNet architectures is
 
 Once you have a rough estimate of the total number of values (for activations, gradients, and misc), the number should be converted to size in GB. Take the number of values, multiply by 4 to get the raw number of bytes (since every floating point is 4 bytes, or maybe by 8 for double precision), and then divide by 1024 multiple times to get the amount of memory in KB, MB, and finally GB. If your network doesn’t fit, a common heuristic to “make it fit” is to decrease the batch size, since most of the memory is usually consumed by the activations.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTU2NTkwNDMsNDU1MzUyMjksNjcwOD
-EwNzE0LC0xOTM3MjQ3MDEyLC0xMzg1NDUxOTc5LDU5OTYzMjQ4
-NywtMTE0Njc3NTQzOSwtMTQzMDU0MzQ4MywxMzA0NDUzODEzLD
-E0NDUxNzY3NTQsNjIyMjg3NDk1LC00MzY4ODc3MTksLTEzMTcx
-MTEyMTIsLTM2ODg4NDczMiwtMTg1MjgyODg4NV19
+eyJoaXN0b3J5IjpbLTEwMTU2NTkwNDNdfQ==
 -->
