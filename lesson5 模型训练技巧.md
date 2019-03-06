@@ -3,7 +3,7 @@
 如果没有激活函数，网络的分类能力基本上类似于线性分类器
 **sigmoid问题：**
 1. 饱和区域梯度为0
-2. sigmoid输出恒为正。恒为正的数据作为输入数据，将会导致梯度要么都为正，要么都为负。因此w只能通向变化。如果要达到w的最优值，那么所走的路径是很曲折的（比如w1，w2变化方向不一致，要达到的话不能走斜线，只能分两次，竖直和水平各走一次），因此收敛速度很慢。所以我们更希望得到关于原点中心的输入数据和关于原点中心对此的输出
+2. sigmoid输出恒为正。恒为正的数据作为输入数据，将会导致梯度要么都为正，要么都为负。因此w只能通向变化。如果要达到w的最优值，那么所走的路径是很曲折的锯齿形的（比如w1，w2变化方向不一致，要达到的话不能走斜线，只能分两次，竖直和水平各走一次），因此收敛速度很慢。所以我们更希望得到关于原点中心的输入数据和关于原点中心对此的输出。不过由于梯度是在一个batch中相加的，所以不同维度可以符号不同，一定程度缓解了这个问题。
 3. 指数运算很耗时
 
 **tanh**
@@ -76,10 +76,10 @@ BN层会延长模型的训练时间，最大30%
 
 ![enter image description here](https://lh3.googleusercontent.com/ruqXTdCdpZb76MmSh6yssI3AXOGkWrrlFVPLaf7HzIWRUXCaVRg5R-O1EIiPnFMChK3TTaQiOTm-)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1MjM0NjkxOSw1MzE2MDI4ODIsLTExNz
-kxMzUyMzksMTk2NDMwMTkzNCwtMTk1ODAwNzYwNSwxMjk2Nzc1
-NjI2LDEyNzUxOTg5OTgsLTE2OTUzODUyNzQsLTE0NzU2MDA4ND
-YsMjA2NzY3Nzc4NCwyMTUzNTI3MjYsLTE3MjE2NDE5NzEsLTE4
-MTI3NTQwNiwxODcyMzQxMTI0LDEwNjA1MjA5NzEsMjAwMzg5Mz
-I3NF19
+eyJoaXN0b3J5IjpbMTI3Mzg5NDc0MSwyMDUyMzQ2OTE5LDUzMT
+YwMjg4MiwtMTE3OTEzNTIzOSwxOTY0MzAxOTM0LC0xOTU4MDA3
+NjA1LDEyOTY3NzU2MjYsMTI3NTE5ODk5OCwtMTY5NTM4NTI3NC
+wtMTQ3NTYwMDg0NiwyMDY3Njc3Nzg0LDIxNTM1MjcyNiwtMTcy
+MTY0MTk3MSwtMTgxMjc1NDA2LDE4NzIzNDExMjQsMTA2MDUyMD
+k3MSwyMDAzODkzMjc0XX0=
 -->
