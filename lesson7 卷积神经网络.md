@@ -3,7 +3,7 @@ When dealing with high-dimensional inputs such as images, as we saw above it is 
 
 Parameter Sharing. Parameter sharing scheme is used in Convolutional Layers to control the number of parameters. Using the real-world example above, we see that there are 55*55*96 = 290,400 neurons in the first Conv Layer, and each has 11*11*3 = 363 weights and 1 bias. Together, this adds up to 290400 * 364 = 105,705,600 parameters on the first layer of the ConvNet alone. Clearly, this number is very high.
 
-It turns out that we can dramatically reduce the number of parameters by making one reasonable assumption: That if one feature is useful to compute at some spatial position (x,y), then it should also be useful to compute at a different position (x2,y2). In other words, denoting a single 2-dimensional slice of depth as a depth slice (e.g. a volume of size [55x55x96] has 96 depth slices, each of size [55x55]), we are going to constrain the neurons in each depth slice to use the same weights and bias. With this parameter sharing scheme, the first Conv Layer in our example would now have only 96 unique set of weights (one for each depth slice), for a total of 96*11*11*3 = 34,848 unique weights, or 34,944 parameters (+96 biases). Alternatively, all 55*55 neurons in each depth slice will now be using the same parameters. In practice during backpropagation, every neuron in the volume will compute the gradient for its weights, but these gradients will be added up across each depth slice and only update a single set of weights per slice.
+It turns out that we can dramatically reduce the number of parameters by making one reasonable assumption: That if one feature is useful to compute at some spatial position (x,y), then it should also be useful to compute at a different position (x2,y2). In other words, denoting a single 2-dimensional slice of depth as a depth slice (e.g. a volume of size [55x55x96] has 96 depth slices, each of size [55x55]), we are going to constrain the neurons in each depth slice to use the same weights and bias. With this parameter sharing scheme, the first Conv Layer in our example would now have only 96 unique set of weights (one for each depth slice), for a total of $96*11*11*3 = 34,848$ unique weights, or 34,944 parameters (+96 biases). Alternatively, all $55*55$ neurons in each depth slice will now be using the same parameters. In practice during backpropagation, every neuron in the volume will compute the gradient for its weights, but these gradients will be added up across each depth slice and only update a single set of weights per slice.
 
 Notice that if all neurons in a single depth slice are using the same weight vector, then the forward pass of the CONV layer can in each depth slice be computed as a convolution of the neuron’s weights with the input volume (Hence the name: Convolutional Layer). This is why it is common to refer to the sets of weights as a filter (or a kernel), that is convolved with the input.
 
@@ -107,9 +107,9 @@ The largest bottleneck to be aware of when constructing ConvNet architectures is
 
 Once you have a rough estimate of the total number of values (for activations, gradients, and misc), the number should be converted to size in GB. Take the number of values, multiply by 4 to get the raw number of bytes (since every floating point is 4 bytes, or maybe by 8 for double precision), and then divide by 1024 multiple times to get the amount of memory in KB, MB, and finally GB. If your network doesn’t fit, a common heuristic to “make it fit” is to decrease the batch size, since most of the memory is usually consumed by the activations.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU1MzUyMjksNjcwODEwNzE0LC0xOTM3Mj
-Q3MDEyLC0xMzg1NDUxOTc5LDU5OTYzMjQ4NywtMTE0Njc3NTQz
-OSwtMTQzMDU0MzQ4MywxMzA0NDUzODEzLDE0NDUxNzY3NTQsNj
-IyMjg3NDk1LC00MzY4ODc3MTksLTEzMTcxMTEyMTIsLTM2ODg4
-NDczMiwtMTg1MjgyODg4NV19
+eyJoaXN0b3J5IjpbLTEwMTU2NTkwNDMsNDU1MzUyMjksNjcwOD
+EwNzE0LC0xOTM3MjQ3MDEyLC0xMzg1NDUxOTc5LDU5OTYzMjQ4
+NywtMTE0Njc3NTQzOSwtMTQzMDU0MzQ4MywxMzA0NDUzODEzLD
+E0NDUxNzY3NTQsNjIyMjg3NDk1LC00MzY4ODc3MTksLTEzMTcx
+MTEyMTIsLTM2ODg4NDczMiwtMTg1MjgyODg4NV19
 -->
