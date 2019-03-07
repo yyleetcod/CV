@@ -76,13 +76,15 @@ BN层会延长模型的训练时间，最大30%
 # Summary
 
 ![enter image description here](https://lh3.googleusercontent.com/ruqXTdCdpZb76MmSh6yssI3AXOGkWrrlFVPLaf7HzIWRUXCaVRg5R-O1EIiPnFMChK3TTaQiOTm-)
+It is important to note that the L2 loss is much harder to optimize than a more stable loss such as Softmax. Intuitively, it requires a very fragile and specific property from the network to output exactly one correct value for each input (and its augmentations). Notice that this is not the case with Softmax, where the precise value of each score is less important: It only matters that their magnitudes are appropriate. Additionally, the L2 loss is less robust because outliers can introduce huge gradients. When faced with a regression problem, first consider if it is absolutely inadequate to quantize the output into bins. For example, if you are predicting star rating for a product, it might work much better to use 5 independent classifiers for ratings of 1-5 stars instead of a regression loss. Classification has the additional benefit that it can give you a distribution over the regression outputs, not just a single output with no indication of its confidence. If you’re certain that classification is not appropriate, use the L2 but be careful: For example, the L2 is more fragile and applying dropout in the network (especially in the layer right before the L2 loss) is not a great idea.
 
+> When faced with a regression task, first consider if it is absolutely necessary. Instead, have a strong preference to discretizing your outputs to bins and perform classification over them whenever possible.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2ODE3NjEyMiwtOTI4NTM4NDg3LDI3OT
-QyMDQ2OCw5NDY3NzA4MzUsMTI3Mzg5NDc0MSwyMDUyMzQ2OTE5
-LDUzMTYwMjg4MiwtMTE3OTEzNTIzOSwxOTY0MzAxOTM0LC0xOT
-U4MDA3NjA1LDEyOTY3NzU2MjYsMTI3NTE5ODk5OCwtMTY5NTM4
-NTI3NCwtMTQ3NTYwMDg0NiwyMDY3Njc3Nzg0LDIxNTM1MjcyNi
-wtMTcyMTY0MTk3MSwtMTgxMjc1NDA2LDE4NzIzNDExMjQsMTA2
-MDUyMDk3MV19
+eyJoaXN0b3J5IjpbLTE0ODg4NjY4MjMsMTg2ODE3NjEyMiwtOT
+I4NTM4NDg3LDI3OTQyMDQ2OCw5NDY3NzA4MzUsMTI3Mzg5NDc0
+MSwyMDUyMzQ2OTE5LDUzMTYwMjg4MiwtMTE3OTEzNTIzOSwxOT
+Y0MzAxOTM0LC0xOTU4MDA3NjA1LDEyOTY3NzU2MjYsMTI3NTE5
+ODk5OCwtMTY5NTM4NTI3NCwtMTQ3NTYwMDg0NiwyMDY3Njc3Nz
+g0LDIxNTM1MjcyNiwtMTcyMTY0MTk3MSwtMTgxMjc1NDA2LDE4
+NzIzNDExMjRdfQ==
 -->
