@@ -72,6 +72,7 @@ BN层会延长模型的训练时间，最大30%
 ![enter image description here](https://lh3.googleusercontent.com/7uWQEn4R44GHoYClTG1emTsfDDig7-nvebcwROzCrrPoAs7JMEY-jRHgnK3ZIJwEMVVGC7unyOOU)
 ![enter image description here](https://lh3.googleusercontent.com/ffpCMzc_N0WFBw-m9bGgWXwIOIedHUKH0saZngfqMAcbbeXiNWsk1YJcWv52rGL336ROGuwnFjxg)
 一个比较好的更新/权重~1e-3
+**Careful with best values on border**. Sometimes it can happen that you’re searching for a hyperparameter (e.g. learning rate) in a bad range. For example, suppose we use  `learning_rate = 10 ** uniform(-6, 1)`. Once we receive the results, it is important to double check that the final learning rate is not at the edge of this interval, or otherwise you may be missing more optimal hyperparameter setting beyond the interval.
 
 # Summary
 
@@ -80,11 +81,11 @@ It is important to note that the L2 loss is much harder to optimize than a more 
 
 > When faced with a regression task, first consider if it is absolutely necessary. Instead, have a strong preference to discretizing your outputs to bins and perform classification over them whenever possible.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMDI3NzczMywtMTQ4ODg2NjgyMywxOD
-Y4MTc2MTIyLC05Mjg1Mzg0ODcsMjc5NDIwNDY4LDk0Njc3MDgz
-NSwxMjczODk0NzQxLDIwNTIzNDY5MTksNTMxNjAyODgyLC0xMT
-c5MTM1MjM5LDE5NjQzMDE5MzQsLTE5NTgwMDc2MDUsMTI5Njc3
-NTYyNiwxMjc1MTk4OTk4LC0xNjk1Mzg1Mjc0LC0xNDc1NjAwOD
-Q2LDIwNjc2Nzc3ODQsMjE1MzUyNzI2LC0xNzIxNjQxOTcxLC0x
-ODEyNzU0MDZdfQ==
+eyJoaXN0b3J5IjpbLTE3NTU5MjE1MTUsLTE0ODg4NjY4MjMsMT
+g2ODE3NjEyMiwtOTI4NTM4NDg3LDI3OTQyMDQ2OCw5NDY3NzA4
+MzUsMTI3Mzg5NDc0MSwyMDUyMzQ2OTE5LDUzMTYwMjg4MiwtMT
+E3OTEzNTIzOSwxOTY0MzAxOTM0LC0xOTU4MDA3NjA1LDEyOTY3
+NzU2MjYsMTI3NTE5ODk5OCwtMTY5NTM4NTI3NCwtMTQ3NTYwMD
+g0NiwyMDY3Njc3Nzg0LDIxNTM1MjcyNiwtMTcyMTY0MTk3MSwt
+MTgxMjc1NDA2XX0=
 -->
