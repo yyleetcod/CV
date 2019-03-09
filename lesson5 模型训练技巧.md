@@ -68,7 +68,7 @@ BN层会延长模型的训练时间，最大30%
 1. 在一定区域内随机取超参数
 2. 在一定区域内网格化取超参数
 
-随机取效果更好。因为大部分情况，一个超参数会比另一个超参数的重要性大很多。而且可能只是在一个很小的区域内取值，模型会有比较好的效果。这样随机取样，取到的值就更多：
+随机取效果更好。因为大部分情况，一个超参数会比另一个超参数的重要性大很多。而且可能只是在一个很小的区域内取值，模型会有比较好的效果。这样随机取样，取到的值就更多.Performing random search rather than grid search allows you to much more precisely discover good values for the important ones.：
 ![enter image description here](https://lh3.googleusercontent.com/7uWQEn4R44GHoYClTG1emTsfDDig7-nvebcwROzCrrPoAs7JMEY-jRHgnK3ZIJwEMVVGC7unyOOU)
 ![enter image description here](https://lh3.googleusercontent.com/ffpCMzc_N0WFBw-m9bGgWXwIOIedHUKH0saZngfqMAcbbeXiNWsk1YJcWv52rGL336ROGuwnFjxg)
 一个比较好的更新/权重~1e-3
@@ -80,11 +80,11 @@ It is important to note that the L2 loss is much harder to optimize than a more 
 
 > When faced with a regression task, first consider if it is absolutely necessary. Instead, have a strong preference to discretizing your outputs to bins and perform classification over them whenever possible.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODg4NjY4MjMsMTg2ODE3NjEyMiwtOT
-I4NTM4NDg3LDI3OTQyMDQ2OCw5NDY3NzA4MzUsMTI3Mzg5NDc0
-MSwyMDUyMzQ2OTE5LDUzMTYwMjg4MiwtMTE3OTEzNTIzOSwxOT
-Y0MzAxOTM0LC0xOTU4MDA3NjA1LDEyOTY3NzU2MjYsMTI3NTE5
-ODk5OCwtMTY5NTM4NTI3NCwtMTQ3NTYwMDg0NiwyMDY3Njc3Nz
-g0LDIxNTM1MjcyNiwtMTcyMTY0MTk3MSwtMTgxMjc1NDA2LDE4
-NzIzNDExMjRdfQ==
+eyJoaXN0b3J5IjpbLTcxMDI3NzczMywtMTQ4ODg2NjgyMywxOD
+Y4MTc2MTIyLC05Mjg1Mzg0ODcsMjc5NDIwNDY4LDk0Njc3MDgz
+NSwxMjczODk0NzQxLDIwNTIzNDY5MTksNTMxNjAyODgyLC0xMT
+c5MTM1MjM5LDE5NjQzMDE5MzQsLTE5NTgwMDc2MDUsMTI5Njc3
+NTYyNiwxMjc1MTk4OTk4LC0xNjk1Mzg1Mjc0LC0xNDc1NjAwOD
+Q2LDIwNjc2Nzc3ODQsMjE1MzUyNzI2LC0xNzIxNjQxOTcxLC0x
+ODEyNzU0MDZdfQ==
 -->
