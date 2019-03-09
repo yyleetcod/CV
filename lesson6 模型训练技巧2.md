@@ -59,6 +59,11 @@ N = (Tens or Hundreds of) Millions
 ![enter image description here](https://lh3.googleusercontent.com/kZAuhvyNiNmlHz2gQp8Lf5U3RLMDfSdRRYPfb_X-gDgEmO1EnMz6F7ku8IvLGmzqWN55QuwN9qpO)
 ![enter image description here](https://lh3.googleusercontent.com/_1e_G6EWnIzOy8TYSMfvzuYTTTeVJcodtM_x8Fpl3-GXvqyX03z3S_n3eALB93i7sW1BuvwBLjVB)
 ![enter image description here](https://lh3.googleusercontent.com/s-SgtKtZePAsw6y1KkzhE2XOTJ_mvkaE_7teDiezCbrgb6bw89vpXwBo5vNS8xND4UYnQwccth1J)
+In practice, one reliable approach to improving the performance of Neural Networks by a few percent is to train multiple independent models, and at test time average their predictions. As the number of models in the ensemble increases, the performance typically monotonically improves (though with diminishing returns). Moreover, the improvements are more dramatic with higher model variety in the ensemble. There are a few approaches to forming an ensemble:
+-   **Same model, different initializations**. Use cross-validation to determine the best hyperparameters, then train multiple models with the best set of hyperparameters but with different random initialization. The danger with this approach is that the variety is only due to initialization.
+-   **Top models discovered during cross-validation**. Use cross-validation to determine the best hyperparameters, then pick the top few (e.g. 10) models to form the ensemble. This improves the variety of the ensemble but has the danger of including suboptimal models. In practice, this can be easier to perform since it doesn’t require additional retraining of models after cross-validation
+-   **Different checkpoints of a single model**. If training is very expensive, some people have had limited success in taking different checkpoints of a single network over time (for example after every epoch) and using those to form an ensemble. Clearly, this suffers from some lack of variety, but can still work reasonably well in practice. The advantage of this approach is that is very cheap.
+-   **Running average of parameters during training**. Related to the last point, a cheap way of almost always getting an extra percent or two of performance is to maintain a second copy of the network’s weights in memory that maintains an exponentially decaying sum of previous weights during training. This way you’re averaging the state of the network over last several iterations. You will find that this “smoothed” version of the weights over last few steps almost always achieves better validation error. The rough intuition to have in mind is that the objective is bowl-shaped and your network is jumping around the mode, so the average has a higher chance of being somewhere nearer the mode.
 # Dropout
 ![enter image description here](https://lh3.googleusercontent.com/epgG28uUD40Hm1VAASJbxW1B2fqp5cr8LeiJh5JppIvFP7kacME-R32HF2wsoGqHU_WXsjwWsTno)
 ![enter image description here](https://lh3.googleusercontent.com/ryQbkcyHJ42fBRt0l5KyPzvchslWmIG3L51DaqGshUcd4sQ6SwXPfbmnhNMAuz5p0-QLuL80fNBe)
@@ -100,11 +105,11 @@ N = (Tens or Hundreds of) Millions
 这背后的微妙原因是较小的网络难以使用诸如梯度下降之类的局部方法进行训练：很明显，它们的损失函数具有相对较少的局部最小值，但事实证明，这些最小值中的许多更易于收敛，并且他们很糟糕（即损失很大）。相反，较大的神经网络包含明显更多的局部最小值，但这些最小值在实际损失方面变得更好。由于神经网络是非凸的，因此很难在数学上研究这些特性，但是已经进行了一些尝试来理解这些目标函数，例如，在最近的一篇论文“多层网络的损失表面”中。在实践中，你发现如果你训练一个小网络，最后的损失可以显示出很大的差异 - 在某些情况下你会很幸运并收敛到一个好地方但在某些情况下你会被困在一个坏的极小。另一方面，如果你训练一个大型网络，你将开始找到许多不同的解决方案，但最终实现的损失的差异会小得多。换句话说，所有解决方案都同样好，并且更少依赖于随机初始化的运气。
 我们讨论了这样一个事实，即较大的网络总是比较小的网络更好地工作，但是它们的更高的模型容量必须通过更强的正规化（例如更高的权重衰减）来适当地解决，否则它们可能过拟合。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1MDM0NDA4MiwzODgwNzAzMTAsNzcyNz
-A1Njc4LC0xMTk2OTIwNTMxLDk4MzM5MDY2OCwtMTg3MzMyMDY5
-LDkyNzA2Njk4LC0xMTI5MDY1NDA4LC0yNTU4ODg4MjksNzczNT
-k1MjQxLDk5NDA3NTkyNiwtNzM5Mzc5MTc4LDE5NDYxNzA0OTAs
-LTU2MjQwMDMxMiwtMjA3NjMzODEwMCw2OTU1MzA1ODIsLTQ2OT
-A0MDA4MCw0NjAxNDY4MywtMjA0MjA2MTg0LDM0NzQzMjkwM119
-
+eyJoaXN0b3J5IjpbMTQ5MjI4MjE3MCwxMjUwMzQ0MDgyLDM4OD
+A3MDMxMCw3NzI3MDU2NzgsLTExOTY5MjA1MzEsOTgzMzkwNjY4
+LC0xODczMzIwNjksOTI3MDY2OTgsLTExMjkwNjU0MDgsLTI1NT
+g4ODgyOSw3NzM1OTUyNDEsOTk0MDc1OTI2LC03MzkzNzkxNzgs
+MTk0NjE3MDQ5MCwtNTYyNDAwMzEyLC0yMDc2MzM4MTAwLDY5NT
+UzMDU4MiwtNDY5MDQwMDgwLDQ2MDE0NjgzLC0yMDQyMDYxODRd
+fQ==
 -->
