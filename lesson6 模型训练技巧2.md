@@ -45,7 +45,7 @@ Adam with beta1 = 0.9,  beta2 = 0.999, and learning_rate = 1e-3 or 5e-4 is a gre
 ![enter image description here](https://lh3.googleusercontent.com/fJUnC7eXJ4JOVQurGFD-NYx1aXIAVKd2NSrOKUDFxTW6PXHH9Vk9S1I2WutxYuC1Wmevi4uAV-TP)
 比如牛顿法。
 ![enter image description here](https://lh3.googleusercontent.com/TBM6EwMfNtPmG3eYtuDRgdCN-Lhn-vI1rEv-ukYtDP1e3HqCT2CdUIUcj1hGCdcXfhm31R5kIkJ5)
-好处是收敛更快，超参数更少，不用学习率
+好处是收敛更快，超参数更少，不用学习率;In particular, multiplying by the inverse Hessian leads the optimization to take more aggressive steps in directions of shallow curvature and shorter steps in directions of steep curvature. Note, crucially, the absence of any learning rate hyperparameters in the update formula, which the proponents of these methods cite this as a large advantage over first-order methods.
 坏处是二阶导矩阵太大了，计算不出来
 Hessian has O(N^2) elements 
 Inverting takes O(N^3)  
@@ -100,11 +100,11 @@ N = (Tens or Hundreds of) Millions
 这背后的微妙原因是较小的网络难以使用诸如梯度下降之类的局部方法进行训练：很明显，它们的损失函数具有相对较少的局部最小值，但事实证明，这些最小值中的许多更易于收敛，并且他们很糟糕（即损失很大）。相反，较大的神经网络包含明显更多的局部最小值，但这些最小值在实际损失方面变得更好。由于神经网络是非凸的，因此很难在数学上研究这些特性，但是已经进行了一些尝试来理解这些目标函数，例如，在最近的一篇论文“多层网络的损失表面”中。在实践中，你发现如果你训练一个小网络，最后的损失可以显示出很大的差异 - 在某些情况下你会很幸运并收敛到一个好地方但在某些情况下你会被困在一个坏的极小。另一方面，如果你训练一个大型网络，你将开始找到许多不同的解决方案，但最终实现的损失的差异会小得多。换句话说，所有解决方案都同样好，并且更少依赖于随机初始化的运气。
 我们讨论了这样一个事实，即较大的网络总是比较小的网络更好地工作，但是它们的更高的模型容量必须通过更强的正规化（例如更高的权重衰减）来适当地解决，否则它们可能过拟合。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzg4MDcwMzEwLDc3MjcwNTY3OCwtMTE5Nj
-kyMDUzMSw5ODMzOTA2NjgsLTE4NzMzMjA2OSw5MjcwNjY5OCwt
-MTEyOTA2NTQwOCwtMjU1ODg4ODI5LDc3MzU5NTI0MSw5OTQwNz
-U5MjYsLTczOTM3OTE3OCwxOTQ2MTcwNDkwLC01NjI0MDAzMTIs
-LTIwNzYzMzgxMDAsNjk1NTMwNTgyLC00NjkwNDAwODAsNDYwMT
-Q2ODMsLTIwNDIwNjE4NCwzNDc0MzI5MDMsLTE3MzM1MDU3OTZd
-fQ==
+eyJoaXN0b3J5IjpbMTI1MDM0NDA4MiwzODgwNzAzMTAsNzcyNz
+A1Njc4LC0xMTk2OTIwNTMxLDk4MzM5MDY2OCwtMTg3MzMyMDY5
+LDkyNzA2Njk4LC0xMTI5MDY1NDA4LC0yNTU4ODg4MjksNzczNT
+k1MjQxLDk5NDA3NTkyNiwtNzM5Mzc5MTc4LDE5NDYxNzA0OTAs
+LTU2MjQwMDMxMiwtMjA3NjMzODEwMCw2OTU1MzA1ODIsLTQ2OT
+A0MDA4MCw0NjAxNDY4MywtMjA0MjA2MTg0LDM0NzQzMjkwM119
+
 -->
