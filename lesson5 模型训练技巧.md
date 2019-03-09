@@ -73,6 +73,7 @@ BN层会延长模型的训练时间，最大30%
 ![enter image description here](https://lh3.googleusercontent.com/ffpCMzc_N0WFBw-m9bGgWXwIOIedHUKH0saZngfqMAcbbeXiNWsk1YJcWv52rGL336ROGuwnFjxg)
 一个比较好的更新/权重~1e-3
 **Careful with best values on border**. Sometimes it can happen that you’re searching for a hyperparameter (e.g. learning rate) in a bad range. For example, suppose we use  `learning_rate = 10 ** uniform(-6, 1)`. Once we receive the results, it is important to double check that the final learning rate is not at the edge of this interval, or otherwise you may be missing more optimal hyperparameter setting beyond the interval.
+**Stage your search from coarse to fine**. In practice, it can be helpful to first search in coarse ranges (e.g. 10 ** [-6, 1]), and then depending on where the best results are turning up, narrow the range. Also, it can be helpful to perform the initial coarse search while only training for 1 epoch or even less, because many hyperparameter settings can lead the model to not learn at all, or immediately explode with infinite cost. The second stage could then perform a narrower search with 5 epochs, and the last stage could perform a detailed search in the final range for many more epochs (for example).
 
 # Summary
 
@@ -81,11 +82,11 @@ It is important to note that the L2 loss is much harder to optimize than a more 
 
 > When faced with a regression task, first consider if it is absolutely necessary. Instead, have a strong preference to discretizing your outputs to bins and perform classification over them whenever possible.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTU5MjE1MTUsLTE0ODg4NjY4MjMsMT
-g2ODE3NjEyMiwtOTI4NTM4NDg3LDI3OTQyMDQ2OCw5NDY3NzA4
-MzUsMTI3Mzg5NDc0MSwyMDUyMzQ2OTE5LDUzMTYwMjg4MiwtMT
-E3OTEzNTIzOSwxOTY0MzAxOTM0LC0xOTU4MDA3NjA1LDEyOTY3
-NzU2MjYsMTI3NTE5ODk5OCwtMTY5NTM4NTI3NCwtMTQ3NTYwMD
-g0NiwyMDY3Njc3Nzg0LDIxNTM1MjcyNiwtMTcyMTY0MTk3MSwt
-MTgxMjc1NDA2XX0=
+eyJoaXN0b3J5IjpbNDg2NDIyNzEsLTE0ODg4NjY4MjMsMTg2OD
+E3NjEyMiwtOTI4NTM4NDg3LDI3OTQyMDQ2OCw5NDY3NzA4MzUs
+MTI3Mzg5NDc0MSwyMDUyMzQ2OTE5LDUzMTYwMjg4MiwtMTE3OT
+EzNTIzOSwxOTY0MzAxOTM0LC0xOTU4MDA3NjA1LDEyOTY3NzU2
+MjYsMTI3NTE5ODk5OCwtMTY5NTM4NTI3NCwtMTQ3NTYwMDg0Ni
+wyMDY3Njc3Nzg0LDIxNTM1MjcyNiwtMTcyMTY0MTk3MSwtMTgx
+Mjc1NDA2XX0=
 -->
