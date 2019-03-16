@@ -27,10 +27,7 @@ R-CNN：使用预训练好的模型，对region proposal提取出的box进行svm
 ![enter image description here](https://lh3.googleusercontent.com/ruUedfl55pF8JRiGXfTry8Zgf942cNv1i1MGYoYFyeHQ1sIgVnVLf25fHOeaOIX2eZgNeHTiRkdP)
 ![enter image description here](https://lh3.googleusercontent.com/prIJKNzla6KFnKxX-1YBXjQ8CXqP_uUSy3EsL_TMFENYJ7p0ep1rZae0EIP1mTO4cLSWMrATW_wU)
 ![enter image description here](https://lh3.googleusercontent.com/imon3oXdXMrjDSolZpjI_e60Yl_t-bRVJ7NA7TaWW9j1apVHsflWLOkzGcueVI05GJJnNehyPCiA)
-
+![enter image description here](https://lh3.googleusercontent.com/3Qk1BovqAg335UZ8CKCP1izwvC1stJk5Pt1JGD505nob7wHSTP7br4I8FXUp5uFcTVxIBZ8_3Nm5)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1Nzc2NzI0LDE1MjgxOTYwNzEsMTQyOD
-cwNzU0Niw3OTA0MzExNDgsOTY0MzcwMTEyLDEzMzgyMTEyNjcs
-MTkxNTA3NDE1OSwtNzIxODUxNDkxLDkxNTg4MzIzMywxNTQ3OT
-I0MjYxLDE1NTY5Mjg5MCw5ODM5MjEyMzZdfQ==
+eyJoaXN0b3J5IjpbMTQyMzQ5Mzk0Ml19
 -->
