@@ -13,8 +13,9 @@
 2. region proposal：例如选择性搜索：从像素出发，把具有相似颜色和纹理的相邻像素合并，得到区域。不断合并，得到更大的相似区域。然后把不同尺度的块状区域转化成框。
 ![enter image description here](https://lh3.googleusercontent.com/X2HKcAjyF2TrcWrgXxqhpGbkr_JckqD7XaDZIB4XAnx7zDkRypE6iMemiutQTUxKmC8Ot2vJOeFZ)
 
-具体步骤：1. 使用region proposal提取出一张图片中可能的区域（一张~2000个） 2.使用预训练模型进行微调
+使用预训练好的模型，对region proposal提取出的box进行svm分类任务的训练，以及回归任务（对box进行微调）
+具体步骤：1. 使用region proposal提取出一张图片中可能的区域（一张~2000个） 2.使用预训练模型进行finetune
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk5MTgzODMwLDE1NTY5Mjg5MCw5ODM5Mj
-EyMzZdfQ==
+eyJoaXN0b3J5IjpbMTU0NzkyNDI2MSwxNTU2OTI4OTAsOTgzOT
+IxMjM2XX0=
 -->
