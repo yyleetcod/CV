@@ -8,7 +8,9 @@
 
 # detection
 
-使用分类的方法：不同位置，不同大小的滑动窗口，去判断是否是某个类别
+1. 使用分类的方法：不同位置，不同大小的滑动窗口，去判断是否是某个类别
+
+2. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTgzOTIxMjM2XX0=
+eyJoaXN0b3J5IjpbNzIxMzc1OTQ5LDk4MzkyMTIzNl19
 -->
