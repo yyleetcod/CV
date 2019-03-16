@@ -19,9 +19,11 @@ R-CNN：使用预训练好的模型，对region proposal提取出的box进行svm
 评估标准：mAP（mean average precision）
 ![enter image description here](https://lh3.googleusercontent.com/YYiQ7yLYPH-uXht8H6TE_abPYNKL7jeAzU2eMA4qtc1YCq9nDUm0Lqr_jVnW8vbP9F17jaLJ16gw)
 
-
+![enter image description here](https://lh3.googleusercontent.com/vwN8mMTE-4ScfpSaT-lLjM6EHAl2iSqGAqiZ585Sc2xfiIvv-HG9twDK2aLIxdestZGCBu6fk61V)
+![enter image description here](https://lh3.googleusercontent.com/U1AqHtidQSl-qK7pgsOXxqBE4I0kUKSbO_57TLrNtinUuelPZ2A_xFai3uhq0OwrdERpZo8azaD9)
+![enter image description here](https://lh3.googleusercontent.com/DacJRt_9bcyRDeVC3gUaH_77gPCrJVyvBcwXymEJFMShni_Sqz9WYHS2mH3fHnPSAV16FWvd2FRL)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwMzgwOTIyNywxOTE1MDc0MTU5LC03Mj
+eyJoaXN0b3J5IjpbMTMzODIxMTI2NywxOTE1MDc0MTU5LC03Mj
 E4NTE0OTEsOTE1ODgzMjMzLDE1NDc5MjQyNjEsMTU1NjkyODkw
 LDk4MzkyMTIzNl19
 -->
