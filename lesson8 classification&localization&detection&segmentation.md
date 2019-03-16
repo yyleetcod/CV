@@ -14,8 +14,8 @@
 ![enter image description here](https://lh3.googleusercontent.com/X2HKcAjyF2TrcWrgXxqhpGbkr_JckqD7XaDZIB4XAnx7zDkRypE6iMemiutQTUxKmC8Ot2vJOeFZ)
 
 使用预训练好的模型，对region proposal提取出的box进行svm分类任务的训练，以及回归任务（对box进行微调）
-具体步骤：1. 使用region proposal提取出一张图片中可能的区域（一张~2000个） 2.使用预训练模型进行finetune
+具体步骤：1. 使用region proposal提取出一张图片中可能的区域（一张~2000个） 2.使用预训练模型进行finetune 3.把提取出的box缩放到cnn输入大小，过cnn。把每张图片经过conv没过fc层提取出的特征保存下来。 4.对每张保存的特征，用来训练er'fen
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0NzkyNDI2MSwxNTU2OTI4OTAsOTgzOT
-IxMjM2XX0=
+eyJoaXN0b3J5IjpbLTE4OTY2MjA4MTIsMTU0NzkyNDI2MSwxNT
+U2OTI4OTAsOTgzOTIxMjM2XX0=
 -->
