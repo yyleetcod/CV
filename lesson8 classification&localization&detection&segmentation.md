@@ -10,9 +10,9 @@
 
 1. 使用分类的方法：不同位置，不同大小的滑动窗口，去判断是否是某个类别
 
-2. 选择性搜索：从像素出发，把具有相似颜色和纹理的相邻像素合并，得到区域。不断合并，得到更大的相似区域。然后把不同尺度的块状区域转化成框。
+2. region proposal：例如选择性搜索：从像素出发，把具有相似颜色和纹理的相邻像素合并，得到区域。不断合并，得到更大的相似区域。然后把不同尺度的块状区域转化成框。
 ![enter image description here](https://lh3.googleusercontent.com/X2HKcAjyF2TrcWrgXxqhpGbkr_JckqD7XaDZIB4XAnx7zDkRypE6iMemiutQTUxKmC8Ot2vJOeFZ)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzg3NDIzODcsOTgzOTIxMjM2XX0=
+eyJoaXN0b3J5IjpbMTU1NjkyODkwLDk4MzkyMTIzNl19
 -->
