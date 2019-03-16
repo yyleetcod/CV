@@ -13,12 +13,13 @@
 2. region proposal：例如选择性搜索：从像素出发，把具有相似颜色和纹理的相邻像素合并，得到区域。不断合并，得到更大的相似区域。然后把不同尺度的块状区域转化成框。
 ![enter image description here](https://lh3.googleusercontent.com/X2HKcAjyF2TrcWrgXxqhpGbkr_JckqD7XaDZIB4XAnx7zDkRypE6iMemiutQTUxKmC8Ot2vJOeFZ)
 
-使用预训练好的模型，对region proposal提取出的box进行svm分类任务的训练，以及回归任务（对box进行微调）
+R-CNN：使用预训练好的模型，对region proposal提取出的box进行svm分类任务的训练，以及回归任务（对box进行微调）
 具体步骤：1. 使用region proposal提取出一张图片中可能的区域（一张~2000个） 2.使用预训练模型进行finetune 3.把提取出的box缩放到cnn输入大小，过cnn。把每张图片经过conv没过fc层提取出的特征保存下来。 4.对每张保存的特征，用来对每个类别训练svm二分类任务（是否是猫，是否是狗） 5.region proposal提出的box进行回归，进行微调（dx,dy,dw,dh）
 
 评估标准：mAP（mean average precision）
 ![enter image description here](https://lh3.googleusercontent.com/YYiQ7yLYPH-uXht8H6TE_abPYNKL7jeAzU2eMA4qtc1YCq9nDUm0Lqr_jVnW8vbP9F17jaLJ16gw)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyMTg1MTQ5MSw5MTU4ODMyMzMsMTU0Nz
-kyNDI2MSwxNTU2OTI4OTAsOTgzOTIxMjM2XX0=
+eyJoaXN0b3J5IjpbMTkxNTA3NDE1OSwtNzIxODUxNDkxLDkxNT
+g4MzIzMywxNTQ3OTI0MjYxLDE1NTY5Mjg5MCw5ODM5MjEyMzZd
+fQ==
 -->
