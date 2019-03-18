@@ -81,12 +81,14 @@ BN层会延长模型的训练时间，最大30%
 It is important to note that the L2 loss is much harder to optimize than a more stable loss such as Softmax. Intuitively, it requires a very fragile and specific property from the network to output exactly one correct value for each input (and its augmentations). Notice that this is not the case with Softmax, where the precise value of each score is less important: It only matters that their magnitudes are appropriate. Additionally, the L2 loss is less robust because outliers can introduce huge gradients. When faced with a regression problem, first consider if it is absolutely inadequate to quantize the output into bins. For example, if you are predicting star rating for a product, it might work much better to use 5 independent classifiers for ratings of 1-5 stars instead of a regression loss. Classification has the additional benefit that it can give you a distribution over the regression outputs, not just a single output with no indication of its confidence. If you’re certain that classification is not appropriate, use the L2 but be careful: For example, the L2 is more fragile and applying dropout in the network (especially in the layer right before the L2 loss) is not a great idea.
 
 > When faced with a regression task, first consider if it is absolutely necessary. Instead, have a strong preference to discretizing your outputs to bins and perform classification over them whenever possible.
+
+![enter image description here](https://lh3.googleusercontent.com/A2_iCkqS2NeUfnQRsuGSAkUApvWvZjdNl-B2Fw3ObYNRSilvUiiBUvpWHcWc9SwHDbh9hBB1mMKX)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDg2NDIyNzEsLTE0ODg4NjY4MjMsMTg2OD
-E3NjEyMiwtOTI4NTM4NDg3LDI3OTQyMDQ2OCw5NDY3NzA4MzUs
-MTI3Mzg5NDc0MSwyMDUyMzQ2OTE5LDUzMTYwMjg4MiwtMTE3OT
-EzNTIzOSwxOTY0MzAxOTM0LC0xOTU4MDA3NjA1LDEyOTY3NzU2
-MjYsMTI3NTE5ODk5OCwtMTY5NTM4NTI3NCwtMTQ3NTYwMDg0Ni
-wyMDY3Njc3Nzg0LDIxNTM1MjcyNiwtMTcyMTY0MTk3MSwtMTgx
-Mjc1NDA2XX0=
+eyJoaXN0b3J5IjpbLTMxOTQwNTgxOSw0ODY0MjI3MSwtMTQ4OD
+g2NjgyMywxODY4MTc2MTIyLC05Mjg1Mzg0ODcsMjc5NDIwNDY4
+LDk0Njc3MDgzNSwxMjczODk0NzQxLDIwNTIzNDY5MTksNTMxNj
+AyODgyLC0xMTc5MTM1MjM5LDE5NjQzMDE5MzQsLTE5NTgwMDc2
+MDUsMTI5Njc3NTYyNiwxMjc1MTk4OTk4LC0xNjk1Mzg1Mjc0LC
+0xNDc1NjAwODQ2LDIwNjc2Nzc3ODQsMjE1MzUyNzI2LC0xNzIx
+NjQxOTcxXX0=
 -->
